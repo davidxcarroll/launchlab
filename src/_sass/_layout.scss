@@ -1,0 +1,222 @@
+
+// STRUCTURE
+// ============================================================
+
+.outer {}
+.inner {
+	@include outer-container;
+	@include media(min-width $mobile) {
+		// @include fill-parent;
+		// @include pad(3em 2em);
+	}
+	@include media(max-width $mobile) {
+		// @include pad(1em);
+	}
+}
+
+// SECTIONS
+// ============================================================
+
+body {
+	background: $grey;
+	@include media(min-width $tablet) {
+		margin: 2em;
+	}
+	@include media(max-width $tablet) {
+		margin: 1em;
+	}
+}
+
+.masthead {
+	.content-masthead {
+		@include media(min-width $landscape) {
+			@include span-columns(3);
+			@include shift(4.5);
+			@include margin(null null 2em);
+		}
+		@include media(max-width $landscape min-width $mobile-xs) {
+			@include span-columns(6);
+			@include shift(3);
+			@include margin(null null 1em);
+		}
+		@include media(max-width $mobile-xs) {
+			@include span-columns(10);
+			@include shift(1);
+			@include margin(null null 1em);
+		}
+	}
+}
+
+.company {
+	text-align: center;
+	@include media(min-width $desktop) {
+		@include span-columns(6);
+		@include omega(2n);
+		@include margin(null null 4em);
+	}
+	@include media(max-width $desktop min-width $landscape) {
+		@include span-columns(8);
+		@include shift(2);
+		@include margin(null null 2em);
+	}
+	@include media(max-width $landscape min-width $mobile) {
+		@include span-columns(10);
+		@include shift(1);
+		@include margin(null null 2em);
+	}
+	@include media(max-width $mobile) {
+		@include span-columns(12);
+		@include margin(null null 2em);
+	}
+}
+
+.page {
+	background: $white;
+	box-shadow: 0 .2em 1em rgba(0,0,0,.15);
+}
+
+.company {
+	.company-logo {
+		text-align: center;
+		img {
+			max-width: 20em;
+			max-height: 15em;
+		}
+		// SPACING
+		@include media(min-width $mobile) {
+				@include pad(2em 2em 0);
+		}
+		@include media(max-width $mobile) {
+				@include pad(1em 0 0);
+		}
+		// WIDTH ETC
+		@include media(min-width $landscape) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $landscape) {
+			@include pad(1em);
+		}
+	}
+}
+
+.company-content {
+	// SPACING
+	@include media(min-width $mobile-xs) {
+			@include pad(0 2em 2em);
+	}
+	@include media(max-width $mobile-xs) {
+			@include pad(0 1em 2em);
+	}
+	@include span-columns(12);
+}
+
+.company-title {
+	@include media(min-width $desktop) {
+		@include margin(2em null 1.4em);
+	}
+	@include media(max-width $desktop) {
+		@include margin(1em null 1.4em);
+	}
+}
+
+.company-liz_caribbean {
+	.company-border {
+		@include company-card($green);
+	}
+}
+
+.company-black_eagle {
+	.company-border {
+		@include company-card($red);
+	}
+}
+
+.masthead-single {
+	.content {
+		@include media(min-width $landscape) {
+			@include span-columns(12);
+			// @include shift(2);
+			@include margin(null null 2em);
+		}
+		@include media(max-width $landscape) {
+			@include span-columns(12);
+			@include margin(null null 1em);
+		}
+	}
+}
+
+.single {
+	@include media(min-width $desktop) {
+		@include span-columns(8);
+		@include shift(2);
+		@include margin(null null 2em);
+	}
+	@include media(max-width $desktop min-width $landscape) {
+		@include span-columns(10);
+		@include shift(1);
+		@include margin(null null 1em);
+	}
+	@include media(max-width $landscape) {
+		@include span-columns(12);
+		@include margin(null null 1em);
+	}
+	.content {
+		@include media(min-width $landscape) {
+			@include pad(0 3em 3em);
+		}
+		@include media(max-width $landscape min-width $mobile-xs) {
+			@include pad(0 1em 3em);
+		}
+		@include media(max-width $mobile-xs) {
+			@include pad(0 .5em 2em);
+		}
+	}
+}
+
+.single-back {
+	text-align: center;
+	@include media(min-width $landscape) {
+		// position: absolute;
+		@include margin(0 0 2em);
+	}
+	@include media(max-width $landscape) {
+		@include margin(1em 0 0 0);	
+	}
+}
+
+.single .company-head {
+	@include outer-container;
+	@include media(min-width $landscape) {
+		@include pad(2em 0 0);
+	}
+	.company-logo {
+		text-align: center;
+		img {
+			max-width: 20em;
+			max-height: 15em;
+		}
+		@include media(min-width $landscape) {
+			@include span-columns(4);
+		}
+	}
+	.company-title {
+		@include media(min-width $landscape) {
+			@include span-columns(7);
+			@include shift(1);
+			@include omega;
+			p {
+				@include margin(.5em 0 0);
+			}
+		}
+	}
+}
+
+.footer {
+	text-align: center;
+	.content-footer {
+		@include span-columns(12);
+		@include omega;
+	}
+}
+

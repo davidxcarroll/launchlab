@@ -1,0 +1,100 @@
+body {
+  color: $black;
+  font-size: $base-font-size;
+  font-family: $font-body;
+}
+
+*,
+a { transition: all .1s ease-in-out; }
+
+body, a { color: $black; }
+
+label,
+input,
+input[type="text"],
+textarea,
+button,
+input[type="submit"] {
+  font-family: $font-body;
+}
+
+a {
+  color: $default-hover;
+  &:hover { color: lighten($default-hover,20); }
+  &:focus { outline: none; }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 { font-family: $font-head; }
+.h1, .h2 { line-height: 1; }
+.h3, .h4 { line-height: 1.2; }
+
+.company-title {
+  .h2 {
+    @include margin(0 null .2em);
+  }
+}
+
+.h6 {
+  @include margin(0 null);
+  font-family: $font-subhead;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+@include media(min-width $desktop) {
+  .h1 { font-size: 4em; }
+  .h2 { font-size: 2.5em; }
+  .h3 { font-size: 2em; }
+  .h4 { font-size: 1.8em; }
+  .h5 { font-size: 1.4em; }
+}
+@include media(max-width $desktop min-width $landscape) {
+  .h1 { font-size: 3.2em; }
+  .h2 { font-size: 2.5em; }
+  .h3 { font-size: 2em; }
+  .h4 { font-size: 1.8em; }
+  .h5 { font-size: 1.4em; }
+}
+@include media(max-width $tablet min-width $landscape) {
+  .h1 { font-size: 3em; }
+  .h2 { font-size: 2.2em; }
+  .h3 { font-size: 1.8em; }
+  .h4 { font-size: 1.4em; }
+  .h5 { font-size: 1.3em; }
+}
+@include media(max-width $landscape min-width $mobile) {
+  .h1 { font-size: 2.4em; }
+  .h2 { font-size: 2em; }
+  .h3 { font-size: 1.8em; }
+  .h4 { font-size: 1.5em; }
+  .h5 { font-size: 1.3em; }
+}
+@include media(max-width $mobile min-width $mobile-xs) {
+  .h1 { font-size: 2.2em; }
+  .h2 { font-size: 1.8em; }
+  .h3 { font-size: 1.4em; }
+  .h4 { font-size: 1.3em; }
+  .h5 { font-size: 1.2em; }
+}
+@include media(max-width $mobile-xs) {
+  .h1 { font-size: 2em; }
+  .h2 { font-size: 1.4em; }
+  .h3 { font-size: 1.2em; }
+  .h4 { font-size: 1.15em; }
+  .h5 { font-size: 1.05em; }
+}
+
+h1 { @extend .h1; }
+h2 { @extend .h2; }
+h3 { @extend .h3; }
+h4 { @extend .h4; }
+h5 { @extend .h5; }
+h6 { @extend .h6; }
+
+.single ul {
+  list-style: initial;
+  li {
+    @include margin(0 0 0 2em);
+  }
+}
+
