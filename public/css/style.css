@@ -562,7 +562,7 @@ picture {
 body {
   color: #000;
   font-size: 16px;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Heebo", sans-serif; }
 
 *,
 a {
@@ -577,7 +577,7 @@ input[type="text"],
 textarea,
 button,
 input[type="submit"] {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Heebo", sans-serif; }
 
 a {
   color: #000; }
@@ -586,20 +586,20 @@ a {
   a:focus {
     outline: none; }
 
-.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
-  font-family: "Work Sans", sans-serif; }
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Heebo", sans-serif; }
 
-.h1, h1, .h2, h2 {
+.h1, .h2 {
   line-height: 1; }
 
-.h3, h3, .h4, h4 {
+.h3, .h4 {
   line-height: 1.2; }
 
-.company-title .h2, .company-title h2 {
+.company-title .h2 {
   margin-top: 0;
   margin-bottom: 0.2em; }
 
-.h6, h6 {
+.h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Oswald", sans-serif;
@@ -607,81 +607,76 @@ a {
   letter-spacing: .2em; }
 
 @media screen and (min-width: 1140px) {
-  .h1, h1 {
+  .h1 {
     font-size: 4em; }
-  .h2, h2 {
+  .h2 {
     font-size: 2.5em; }
-  .h3, h3 {
+  .h3 {
     font-size: 2em; }
-  .h4, h4 {
+  .h4 {
     font-size: 1.8em; }
-  .h5, h5 {
+  .h5 {
     font-size: 1.4em; } }
 
 @media screen and (max-width: 1140px) and (min-width: 600px) {
-  .h1, h1 {
+  .h1 {
     font-size: 3.2em; }
-  .h2, h2 {
+  .h2 {
     font-size: 2.5em; }
-  .h3, h3 {
+  .h3 {
     font-size: 2em; }
-  .h4, h4 {
+  .h4 {
     font-size: 1.8em; }
-  .h5, h5 {
+  .h5 {
     font-size: 1.4em; } }
 
 @media screen and (max-width: 770px) and (min-width: 600px) {
-  .h1, h1 {
+  .h1 {
     font-size: 3em; }
-  .h2, h2 {
+  .h2 {
     font-size: 2.2em; }
-  .h3, h3 {
+  .h3 {
     font-size: 1.8em; }
-  .h4, h4 {
+  .h4 {
     font-size: 1.4em; }
-  .h5, h5 {
+  .h5 {
     font-size: 1.3em; } }
 
 @media screen and (max-width: 600px) and (min-width: 420px) {
-  .h1, h1 {
+  .h1 {
     font-size: 2.4em; }
-  .h2, h2 {
+  .h2 {
     font-size: 2em; }
-  .h3, h3 {
+  .h3 {
     font-size: 1.8em; }
-  .h4, h4 {
+  .h4 {
     font-size: 1.5em; }
-  .h5, h5 {
+  .h5 {
     font-size: 1.3em; } }
 
 @media screen and (max-width: 420px) and (min-width: 321px) {
-  .h1, h1 {
+  .h1 {
     font-size: 2.2em; }
-  .h2, h2 {
+  .h2 {
     font-size: 1.8em; }
-  .h3, h3 {
+  .h3 {
     font-size: 1.4em; }
-  .h4, h4 {
+  .h4 {
     font-size: 1.3em; }
-  .h5, h5 {
+  .h5 {
     font-size: 1.2em; } }
 
 @media screen and (max-width: 321px) {
-  .h1, h1 {
+  .h1 {
     font-size: 2em; }
-  .h2, h2 {
+  .h2 {
     font-size: 1.4em; }
-  .h3, h3 {
+  .h3 {
     font-size: 1.2em; }
-  .h4, h4 {
+  .h4 {
     font-size: 1.15em; }
-  .h5, h5 {
+  .h5 {
     font-size: 1.05em; } }
-
-.single ul {
-  list-style: initial; }
-  .single ul li {
-    margin: 0 0 0 2em; }
 
 .inner {
   max-width: 68em;
@@ -692,272 +687,10 @@ a {
     content: "";
     display: table; }
 
-body {
-  background: #f2f2f2; }
-  @media screen and (min-width: 770px) {
-    body {
-      margin: 2em; } }
-  @media screen and (max-width: 770px) {
-    body {
-      margin: 1em; } }
+@media screen and (min-width: 770px) {
+  body {
+    margin: 2em; } }
 
-@media screen and (min-width: 600px) {
-  .masthead .content-masthead {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-left: 38.38412%;
-    margin-bottom: 2em; }
-    .masthead .content-masthead:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 600px) and (min-width: 321px) {
-  .masthead .content-masthead {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 25.58941%;
-    margin-bottom: 1em; }
-    .masthead .content-masthead:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 321px) {
-  .masthead .content-masthead {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%;
-    margin-bottom: 1em; }
-    .masthead .content-masthead:last-child {
-      margin-right: 0; } }
-
-.company {
-  text-align: center; }
-  @media screen and (min-width: 1140px) {
-    .company {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-bottom: 4em; }
-      .company:last-child {
-        margin-right: 0; }
-      .company:nth-child(2n) {
-        margin-right: 0; }
-      .company:nth-child(2n+1) {
-        clear: left; } }
-  @media screen and (max-width: 1140px) and (min-width: 600px) {
-    .company {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%;
-      margin-bottom: 2em; }
-      .company:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 600px) and (min-width: 420px) {
-    .company {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%;
-      margin-bottom: 2em; }
-      .company:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 420px) {
-    .company {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-bottom: 2em; }
-      .company:last-child {
-        margin-right: 0; } }
-
-.page {
-  background: #FFFFFF;
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.15); }
-
-.company .company-logo {
-  text-align: center; }
-  .company .company-logo img {
-    max-width: 20em;
-    max-height: 15em; }
-  @media screen and (min-width: 420px) {
-    .company .company-logo {
-      padding: 2em 2em 0; } }
-  @media screen and (max-width: 420px) {
-    .company .company-logo {
-      padding: 1em 0 0; } }
-  @media screen and (min-width: 600px) {
-    .company .company-logo {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
-      .company .company-logo:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 600px) {
-    .company .company-logo {
-      padding: 1em; } }
-
-.company-content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  @media screen and (min-width: 321px) {
-    .company-content {
-      padding: 0 2em 2em; } }
-  @media screen and (max-width: 321px) {
-    .company-content {
-      padding: 0 1em 2em; } }
-  .company-content:last-child {
-    margin-right: 0; }
-
-@media screen and (min-width: 1140px) {
-  .company-title {
-    margin-top: 2em;
-    margin-bottom: 1.4em; } }
-
-@media screen and (max-width: 1140px) {
-  .company-title {
-    margin-top: 1em;
-    margin-bottom: 1.4em; } }
-
-.company-liz_caribbean .company-border {
-  height: .4em;
-  background-color: #62E0CE;
-  background: linear-gradient(45deg, #62dde0, #62e0b9); }
-
-.company-black_eagle .company-border {
-  height: .4em;
-  background-color: #cc0001;
-  background: linear-gradient(45deg, #cc2100, #cc0023); }
-
-@media screen and (min-width: 600px) {
-  .masthead-single .content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 2em; }
-    .masthead-single .content:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 600px) {
-  .masthead-single .content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 1em; }
-    .masthead-single .content:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 1140px) {
-  .single {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
-    margin-bottom: 2em; }
-    .single:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 1140px) and (min-width: 600px) {
-  .single {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%;
-    margin-bottom: 1em; }
-    .single:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 600px) {
-  .single {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-bottom: 1em; }
-    .single:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 600px) {
-  .single .content {
-    padding: 0 3em 3em; } }
-
-@media screen and (max-width: 600px) and (min-width: 321px) {
-  .single .content {
-    padding: 0 1em 3em; } }
-
-@media screen and (max-width: 321px) {
-  .single .content {
-    padding: 0 0.5em 2em; } }
-
-.single-back {
-  text-align: center; }
-  @media screen and (min-width: 600px) {
-    .single-back {
-      margin: 0 0 2em; } }
-  @media screen and (max-width: 600px) {
-    .single-back {
-      margin: 1em 0 0; } }
-
-.single .company-head {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .single .company-head::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (min-width: 600px) {
-    .single .company-head {
-      padding: 2em 0 0; } }
-  .single .company-head .company-logo {
-    text-align: center; }
-    .single .company-head .company-logo img {
-      max-width: 20em;
-      max-height: 15em; }
-    @media screen and (min-width: 600px) {
-      .single .company-head .company-logo {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .single .company-head .company-logo:last-child {
-          margin-right: 0; } }
-  @media screen and (min-width: 600px) {
-    .single .company-head .company-title {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 57.35098%;
-      margin-left: 8.5298%;
-      margin-right: 0; }
-      .single .company-head .company-title:last-child {
-        margin-right: 0; }
-      .single .company-head .company-title p {
-        margin: 0.5em 0 0; } }
-
-.footer {
-  text-align: center; }
-  .footer .content-footer {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    margin-right: 0; }
-    .footer .content-footer:last-child {
-      margin-right: 0; }
+@media screen and (max-width: 770px) {
+  body {
+    margin: 1em; } }

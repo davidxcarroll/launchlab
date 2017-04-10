@@ -19,9 +19,3 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
-
-@mixin company-card($color) {
-	height: .4em;
-	background-color: $color;
-	background: linear-gradient(45deg, adjust-hue($color, 10), adjust-hue($color, -10));
-}

@@ -1,22 +1,78 @@
 extends _base.pug
 
+block header
+
+	a(href="/")
+		h1 Launch Lab
+
+	include _include-nav-mobile.pug
+
 block content
-	div.outer
-		div.inner
-			div.content.page.company.company-black_eagle
-				div.company-border
-				a(href="blackeagle.html")
-					div.company-logo
-							img(src="img/logo-black_eagle-color.svg")
-					div.company-content
-						div.company-title
-							h2 Black Eagle Protection
-							h6 Security Services
-			div.content.page.company.company-liz_caribbean
-				div.company-border
-				div.company-logo
-					img(src="img/logo-liz_caribbean.svg")
-				div.company-content
-					div.company-title
-						h2 Liz Caribbean
-						h6 Night Club &amp; Restaurant
+	
+	div.hero
+		h1 Launch Lab
+		img(src="img/resort.jpg")
+
+	div.primary-message
+		h2 The science of real estate sales
+		ul
+			li
+				div.primary-message-svg
+					img(src="img/bucket-marketing-advertising.svg")
+				h4 Internet Marketing and Advertising
+			li
+				div.primary-message-svg
+					img(src="img/bucket-marketing-advertising.svg")
+				h4 Accelerated Real Estate Sales
+			li
+				div.primary-message-svg
+					img(src="img/bucket-marketing-advertising.svg")
+				h4 Unconventional Secret Sauce
+
+	div.project-featured
+		img(src="img/resort.jpg")
+		h2 Sales Success in Two Eras
+		h6 The Canyons® Ski Resort, Park City, Utah
+		div.stats
+				div.stat-1
+					h3 $100 M
+					p Original Launch Sales
+				div.stat-2
+					h3 $10 M
+					p Donec Congue Lacinia
+		a(href="projects.html")
+			p View case study
+
+	div.project-list
+		div.map
+			img(src="img/map.jpg")
+		div.list
+			div.project-list-usa
+				ul
+					li
+						h4 The Club at Spanish Peaks
+						p Big Sky, Montana
+					li
+						h4 The Club at Spanish Peaks
+						p Big Sky, Montana
+					li
+						h4 The Club at Spanish Peaks
+						p Big Sky, Montana
+			div.project-list-other
+				ul
+					li
+						h4 The Club at Spanish Peaks
+						p Big Sky, Montana
+					li
+						h4 The Club at Spanish Peaks
+						p Big Sky, Montana
+					li
+						h4 The Club at Spanish Peaks
+						p Big Sky, Montana
+
+	div.testimonial
+		h3 [Launch Lab] executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.
+		p Mark Waltrip, COO Westgate Resorts
+		p (407) 351-3350 x101
+
+

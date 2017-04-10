@@ -28,8 +28,8 @@ gulp.task('sass', function() {
 
 var pug = require('gulp-pug');
 
-gulp.task('pug', function() {
-  gulp.src('./src/!(_)**/!(_)*.pug')
+gulp.task('pug', function buildHTML() {
+  return gulp.src('./src/**/!(_)*.pug')
   .pipe(pug({
     pretty: true
   }))
