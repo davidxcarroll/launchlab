@@ -4,13 +4,13 @@ var gulp = require('gulp')
 // PLUMBER
 // ============================================================
 
-var plumber = require('gulp-plumber');
-var coffee = require('gulp-coffee');
+// var plumber = require('gulp-plumber');
+// var coffee = require('gulp-coffee');
  
-gulp.src('./src/*.pug')
-    .pipe(plumber())
-    .pipe(coffee())
-    .pipe(gulp.dest('./public'));
+// gulp.src('./src/*.pug')
+//     .pipe(plumber())
+//     .pipe(coffee())
+//     .pipe(gulp.dest('./public'));
 
 // SASS
 // ============================================================

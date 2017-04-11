@@ -1,3 +1,57 @@
-
 // HEADER =======================
 
+.nav-mobile {
+	@include media(min-width $tablet) {
+		display: none;
+	}
+	@include fill-parent;
+	text-align: right;
+	background-color: $white;
+	p {
+		display: inline-block;
+		@include pad(1em);
+		cursor: pointer;
+		.nav-mobile-icon {
+			float: right;
+			display: block;
+			@include size(1.3em);
+			@include margin(0 0 0 .6em);
+		}
+	}
+}
+
+.nav {
+	@include media(max-width $tablet) {
+		display: none;
+	}
+	ul {
+		@include media(min-width $landscape) {
+			// @include row(table);
+		}
+		li {
+			@include media(min-width $landscape) {
+				@include span-columns(2);
+				@include omega(6n);
+			}
+			@include media(max-width $landscape) {
+				@include fill-parent;
+			}
+			a {
+				display: block;
+				@include size(100% auto);
+				@include padding(1em null);
+				text-align: center;
+				@extend .button;
+			}
+			&.nav-button-contact {
+				float: right;
+			}
+		}
+	}
+}
+
+.nav-home {
+	.nav-button-home {
+		display: none;
+	}
+}

@@ -1,21 +1,23 @@
 body {
-  color: $black;
   font-size: $base-font-size;
-  font-family: $font-body;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $black;
 }
 
 *,
 a { transition: all .1s ease-in-out; }
 
-body, a { color: $black; }
-
-label,
 input,
 input[type="text"],
-textarea,
+textarea {
+  font-family: $font-primary;
+}
+
+label,
 button,
 input[type="submit"] {
-  font-family: $font-body;
+  font-family: $font-secondary;
 }
 
 a {
@@ -24,70 +26,74 @@ a {
   &:focus { outline: none; }
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 { font-family: $font-head; }
-.h1, .h2 { line-height: 1; }
-.h3, .h4 { line-height: 1.2; }
-
-.company-title {
-  .h2 {
-    @include margin(0 null .2em);
-  }
+// FONT: PRIMARY
+.button, .h1, .h3, .h4, .h6 {
+  font-family: $font-primary;
+  font-weight: 700;
 }
 
-.h6 {
-  @include margin(0 null);
-  font-family: $font-subhead;
+// FONT: SECONDARY
+.h2, .h5, .h7, .h8 {
+  font-family: $font-secondary;
+  font-weight: 500;
+}
+
+// ALL CAPS
+.button, .h2, .h5, .h7, .h8 {
   text-transform: uppercase;
-  letter-spacing: .2em;
 }
 
-@include media(min-width $desktop) {
-  .h1 { font-size: 4em; }
-  .h2 { font-size: 2.5em; }
-  .h3 { font-size: 2em; }
-  .h4 { font-size: 1.8em; }
-  .h5 { font-size: 1.4em; }
+// LETTER SPACING
+.h7 {
+  letter-spacing: 1;
 }
-@include media(max-width $desktop min-width $landscape) {
-  .h1 { font-size: 3.2em; }
-  .h2 { font-size: 2.5em; }
-  .h3 { font-size: 2em; }
-  .h4 { font-size: 1.8em; }
-  .h5 { font-size: 1.4em; }
+
+// COLORS
+
+.black {
+  color: $black;
 }
-@include media(max-width $tablet min-width $landscape) {
+.black-trans {
+  color: rgba($black, .4);
+}
+
+.white {
+  color: $white;
+}
+.white-trans {
+  color: rgba($white, .4);
+}
+
+@include media(min-width $landscape) {
   .h1 { font-size: 3em; }
-  .h2 { font-size: 2.2em; }
-  .h3 { font-size: 1.8em; }
-  .h4 { font-size: 1.4em; }
-  .h5 { font-size: 1.3em; }
-}
-@include media(max-width $landscape min-width $mobile) {
-  .h1 { font-size: 2.4em; }
-  .h2 { font-size: 2em; }
-  .h3 { font-size: 1.8em; }
+  .h2 { font-size: 2.25em; }
+  .h3 { font-size: 1.875em; }
   .h4 { font-size: 1.5em; }
-  .h5 { font-size: 1.3em; }
+  .h5 { font-size: 1.125em; }
+  .h6 { font-size: 1em; }
+  .h7 { font-size: 0.875em; }
+  .h8 { font-size: 0.625em; }
+  .button { font-size: 1em; }
 }
-@include media(max-width $mobile min-width $mobile-xs) {
-  .h1 { font-size: 2.2em; }
-  .h2 { font-size: 1.8em; }
-  .h3 { font-size: 1.4em; }
-  .h4 { font-size: 1.3em; }
-  .h5 { font-size: 1.2em; }
-}
-@include media(max-width $mobile-xs) {
-  .h1 { font-size: 2em; }
-  .h2 { font-size: 1.4em; }
-  .h3 { font-size: 1.2em; }
-  .h4 { font-size: 1.15em; }
-  .h5 { font-size: 1.05em; }
+@include media(max-width $landscape) {
+  .h1 { font-size: 1.875em; }
+  .h2 { font-size: 1.35em; }
+  .h3 { font-size: 1.125em; }
+  .h4 { font-size: 0.9em; }
+  .h5 { font-size: 0.75em; }
+  .h6 { font-size: 0.875em; }
+  .h7 { font-size: 0.875em; }
+  .h8 { font-size: 0.375em; }
+  .button { font-size: 0.8em; }
 }
 
-// h1 { @extend .h1; }
-// h2 { @extend .h2; }
-// h3 { @extend .h3; }
-// h4 { @extend .h4; }
-// h5 { @extend .h5; }
-// h6 { @extend .h6; }
+h1, h2, h3, h4, h5, h6, p {
+  @include margin(0);
+}
 
+h1 { @extend .h1; }
+h2 { @extend .h2; }
+h3 { @extend .h3; }
+h4 { @extend .h4; }
+h5 { @extend .h5; }
+h6 { @extend .h6; }

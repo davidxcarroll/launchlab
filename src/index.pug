@@ -1,36 +1,46 @@
 extends _base.pug
 
 block header
-
-	a(href="/")
-		h1 Launch Lab
-
-	include _include-nav-mobile.pug
+	
+	div.nav-home
+		include _include-nav-mobile.pug
 
 block content
-	
-	div.hero
-		h1 Launch Lab
-		img(src="img/resort.jpg")
 
-	div.primary-message
-		h2 The science of real estate sales
-		ul
-			li
-				div.primary-message-svg
-					img(src="img/bucket-marketing-advertising.svg")
-				h4 Internet Marketing and Advertising
-			li
-				div.primary-message-svg
-					img(src="img/bucket-marketing-advertising.svg")
-				h4 Accelerated Real Estate Sales
-			li
-				div.primary-message-svg
-					img(src="img/bucket-marketing-advertising.svg")
-				h4 Unconventional Secret Sauce
+	div.outer.hero-full.hero-home
+			div.inner
+				h1.h1 Launch Lab
+
+	div.outer.primary-message
+		div.inner
+				h1.h1
+					span.break The science of 
+					span.break real estate sales
+
+	div.outer.buckets-3-col.primary-message-buckets
+		div.inner
+			ul
+				li
+					div.svg.primary-message-svg
+						include _svg-marketing_advertising.pug
+					p.h7
+						span.break Internet Marketing 
+						span.break and Advertising
+				li
+					div.svg.primary-message-svg
+						include _svg-accelerated_sales.pug
+					p.h7
+						span.break Accelerated Real 
+						span.break Estate Sales
+				li
+					div.svg.primary-message-svg
+						include _svg-secret_sauce.pug
+					p.h7
+						span.break Unconventional 
+						span.break Secret Sauce
 
 	div.project-featured
-		img(src="img/resort.jpg")
+		img(src="img/photo-resort.jpg")
 		h2 Sales Success in Two Eras
 		h6 The Canyons® Ski Resort, Park City, Utah
 		div.stats

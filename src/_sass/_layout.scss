@@ -10,11 +10,32 @@
 // SECTIONS
 // ============================================================
 
-body {
+.hero-full {
 	@include media(min-width $tablet) {
-		margin: 2em;
+		@include size(100% 60%);
 	}
 	@include media(max-width $tablet) {
-		margin: 1em;
+		@include size(100% 20em);
+	}
+}
+
+.buckets-3-col {
+	ul {
+			@include media(min-width $tablet) {
+				@include span-columns(8);
+				@include shift(2);
+			}
+			@include media(max-width $tablet) {
+				@include span-columns(12);
+			}
+		li {
+			@include media(min-width $landscape) {
+				@include span-columns(4);
+				@include omega(3n);
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(12);
+			}
+		}
 	}
 }

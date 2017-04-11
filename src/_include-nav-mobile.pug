@@ -1,16 +1,19 @@
-a(href="/")
-	p Menu
+div.nav-mobile
+	p.button Menu
+		span.nav-mobile-icon.nav-mobile-icon-menu.svg.show
+			include _svg-menu.pug
 
-ul.nav
-	a(href="/")
-		li Launch Lab
-	a(href="projects.html")
-		li Projects
-	a(href="testimonials.html")
-		li Testimonials
-	a(href="whitepapers.html")
-		li Whitepapers
-	a(href="about.html")
-		li About
-	a(href="contact.html")
-		li Contact
+div.outer.nav
+	ul.inner
+		li.nav-button-home
+			a(href="/") Launch Lab
+		li
+			a(href="projects.html") Projects
+		li
+			a(href="testimonials.html") Testimonials
+		li
+			a(href="whitepapers.html") Whitepapers
+		li
+			a(href="about.html") About
+		li.nav-button-contact
+			a(href="contact.html") Contact

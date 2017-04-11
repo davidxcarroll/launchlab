@@ -19,3 +19,19 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
+
+// EXTENDS
+// ============================================================
+
+.hide {
+	display: none;
+}
+.show {
+	display: visible;
+}
+
+.svg {
+	svg {
+		@include size(100%);
+	}
+}

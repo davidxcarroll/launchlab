@@ -1,0 +1,45 @@
+.hero-home {
+	background-image: url("../img/photo-resort.jpg");
+	background-size: cover;
+}
+
+.primary-message {
+	h1 {
+		text-align: center;
+		@include media(max-width $tablet) {
+			.break {
+				display: block;
+			}
+		}
+	}
+}
+
+.primary-message-buckets {
+	li {
+		text-align: center;
+		.primary-message-svg {
+			@include media(min-width $landscape) {
+				@include size(9.6em 7.2em);
+			}
+			@include media(max-width $landscape) {
+				@include size(9.6em 7.2em);
+			}
+			display: inline-block;
+			.svg-texture {
+				fill: lighten($black,60%);
+			}
+		}
+		.h7 {
+			@include media(min-width $landscape) {
+				.break {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.patterns-container {
+	@include padding(1em);
+	background-color: rgba($black,.2);
+}
