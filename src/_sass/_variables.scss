@@ -2,18 +2,19 @@
 // VARIABLES
 // ============================================================
 
-$base-font-size:		16px;
+$base-font-size:		 16px;
 
-$white:							#FFFFFF;
-$black:							#000;
+$white:							 #FFFFFF;
+$black:							 #000;
 
-$default-hover:			$black;
+$link:			         $black;
+$link-hover:         lighten($link,10);
 
-$desktop:						1140px;
-$tablet:						770px;
-$landscape:					600px;
-$mobile:						420px;
-$mobile-xs:					321px;
+$desktop:						 1140px;
+$tablet:						 770px;
+$landscape:					 600px;
+$mobile:						 420px;
+$mobile-xs:					 321px;
 
-$font-primary:			'Heebo', sans-serif;
-$font-secondary:		'Oswald', sans-serif;
+$font-primary:			 'Heebo', sans-serif;
+$font-secondary:		 'Oswald', sans-serif;

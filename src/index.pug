@@ -1,21 +1,16 @@
 extends _base.pug
 
-block header
-	
-	div.nav-home
-		include _include-nav-mobile.pug
-
 block content
 
-	div.outer.hero-full.hero-home
-			div.inner
-				h1.h1 Launch Lab
+	div.hero-full.hero-home
+		div.nav-home
+			include _include-header.pug
 
 	div.outer.primary-message
 		div.inner
-				h1.h1
-					span.break The science of 
-					span.break real estate sales
+			h1.h1
+				span.break The science of 
+				span.break real estate sales
 
 	div.outer.buckets-3-col.primary-message-buckets
 		div.inner
@@ -39,46 +34,62 @@ block content
 						span.break Unconventional 
 						span.break Secret Sauce
 
-	div.project-featured
-		img(src="img/photo-resort.jpg")
-		h2 Sales Success in Two Eras
-		h6 The Canyons® Ski Resort, Park City, Utah
-		div.stats
-				div.stat-1
-					h3 $100 M
-					p Original Launch Sales
-				div.stat-2
-					h3 $10 M
-					p Donec Congue Lacinia
-		a(href="projects.html")
-			p View case study
+	div.outer.project-featured
+		.inner
+			div.project-photo
+				div.stats
+					div.stat-1
+						h3 $100 M
+						p Original Launch Sales
+					div.stat-2
+						h3 $10 M
+						p Donec Congue Lacinia
+			div.project-info
+				div.project-info-title
+					h1 Sales Success in Two Eras
+					h5 The Canyons® Ski Resort, Park City, Utah
+				div.project-info-cta.cta-square
+					a(href="projects.html")
+						h5.h5 View case study
+						span.cta-arrow
 
-	div.project-list
+	div.outer.project-list-map
+		div.inner
+			h1.h1 We’ve been everywhere, man
 		div.map
-			img(src="img/map.jpg")
-		div.list
-			div.project-list-usa
+			div.svg
+				include _svg-map.pug
+		div.project-list
+
+			mixin project(resort, location)
+				li
+					h6.h6= resort
+					p.h8.black-trans= location
+
+			div.project-list-region
+				p.h7.black-trans United States of America
 				ul
-					li
-						h4 The Club at Spanish Peaks
-						p Big Sky, Montana
-					li
-						h4 The Club at Spanish Peaks
-						p Big Sky, Montana
-					li
-						h4 The Club at Spanish Peaks
-						p Big Sky, Montana
-			div.project-list-other
+					+project('Cordillera', 'Vail Valley, Colorado')
+					+project('Grizzly Ranch', 'Lake Tahoe, California')
+					+project('Juniper Springs Lodge', 'Mammoth, California')
+					+project('Hyatt Escala Lodge', 'Park City, Utah')
+					+project('Promonotory', 'Park City, Utah')
+					+project('Westgate Park City Resort', 'Park City, Utah')
+					+project('Reunion Resort and Club', 'Orlando, Florida')
+					+project('Hammock Beach', 'Palm Coast, Florida')
+					+project('Spruce Peak', 'Stowe Mt. Resort, Vermont')
+
+			div.project-list-region
+				p.h7.black-trans Latin America &amp; The Caribbean
 				ul
-					li
-						h4 The Club at Spanish Peaks
-						p Big Sky, Montana
-					li
-						h4 The Club at Spanish Peaks
-						p Big Sky, Montana
-					li
-						h4 The Club at Spanish Peaks
-						p Big Sky, Montana
+					+project('Four Seasons Villas', 'Punta Mita, Mexico')
+					+project('Grand Residences', 'Riviera Maya, Mexico')
+					+project('Monte del Barco', 'Guanacaste, Costa Rica')
+					+project('Roko Ki', 'Dominican Republic')
+					+project('Royal Resorts', 'Cancun, Mexico')
+					+project('Royal Haciendas', 'Playa del Carmen, Mexico')
+
+		div.clearfix
 
 	div.testimonial
 		h3 [Launch Lab] executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.

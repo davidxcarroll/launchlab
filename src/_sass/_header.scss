@@ -1,47 +1,24 @@
 // HEADER =======================
 
-.nav-mobile {
-	@include media(min-width $tablet) {
-		display: none;
-	}
-	@include fill-parent;
-	text-align: right;
-	background-color: $white;
-	p {
-		display: inline-block;
-		@include pad(1em);
-		cursor: pointer;
-		.nav-mobile-icon {
-			float: right;
-			display: block;
-			@include size(1.3em);
-			@include margin(0 0 0 .6em);
-		}
-	}
-}
-
 .nav {
-	@include media(max-width $tablet) {
-		display: none;
-	}
+	// background-color: $white;
+	background-image: url(../img/bg-halftone-white-2@2x.png);
+	background-size: 20em;
 	ul {
-		@include media(min-width $landscape) {
-			// @include row(table);
-		}
 		li {
-			@include media(min-width $landscape) {
+			@include media(min-width $tablet) {
 				@include span-columns(2);
 				@include omega(6n);
 			}
-			@include media(max-width $landscape) {
+			@include media(max-width $tablet) {
 				@include fill-parent;
 			}
+			@extend .button;
+			text-align: center;
 			a {
 				display: block;
 				@include size(100% auto);
 				@include padding(1em null);
-				text-align: center;
-				@extend .button;
 			}
 			&.nav-button-contact {
 				float: right;
@@ -50,8 +27,112 @@
 	}
 }
 
-.nav-home {
-	.nav-button-home {
+// LOGO
+
+.nav-button-home {
+	@include size(9.375em auto);
+	background-color: $black;
+	a {
+		font-weight: 900;
+		text-align: center;
+		color: $white;
+		@include media(min-width $landscape) {
+			@include pad(.8em 0);
+			font-size: 1.3125em;
+			letter-spacing: 2;
+			line-height: 1em;
+		}
+		@include media(max-width $landscape) {
+			@include pad(.8em 0);
+			font-size: 1.2em;
+			letter-spacing: 2;
+			line-height: 1.1em;
+		}
+		.nav-logo {
+			display: block;
+			@include media(min-width $landscape) {
+				@include size(auto 3.6em);
+				@include margin(0 auto .6em);
+			}
+			@include media(max-width $landscape) {
+				@include size(auto 3em);
+				@include margin(0 auto .4em);
+			}
+		}
+		.break {
+			display: block;
+		}
+	}
+}
+
+// LOGO HOME
+
+.hero-home {
+	position: relative;
+	.nav-home {
+		@include media(min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		.nav-button-home {
+			@include size(9.375em auto);
+			position: absolute;
+			bottom: -1.875em;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		ul {
+			li {
+				@include media(min-width $tablet) {
+					@include span-columns(2.4);
+					@include omega(6n);
+				}
+			}
+		}
+	}
+}
+
+// NAV HAMBURGER BUTTON
+
+.nav-button {
+	@include media(max-width $tablet) {
 		display: none;
+	}
+}
+
+// CONTACT BUTTON
+
+.nav-button-contact {
+	background-color: $link;
+	a {
+		color: $white;
+		&:hover {
+			background-color: $link-hover;
+		}
+	}
+}
+
+// NAV ON MOBILE
+
+.nav-mobile {
+	@include media(min-width $tablet) {
+		display: none;
+	}
+	@include fill-parent;
+	text-align: right;
+	// background-color: $white;
+	p {
+		display: inline-block;
+		@include pad(1em);
+		cursor: pointer;
+		background-image: url(../img/bg-halftone-white-2@2x.png);
+		background-size: 20em;
+		.nav-mobile-icon {
+			float: right;
+			display: block;
+			@include size(1.3em);
+			@include margin(0 0 0 .6em);
+		}
 	}
 }

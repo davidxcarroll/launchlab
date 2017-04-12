@@ -21,8 +21,8 @@ input[type="submit"] {
 }
 
 a {
-  color: $default-hover;
-  &:hover { color: lighten($default-hover,20); }
+  color: $link;
+  &:hover { color: $link-hover }
   &:focus { outline: none; }
 }
 
@@ -43,8 +43,13 @@ a {
   text-transform: uppercase;
 }
 
+// LINE HEIGHT
+.h1 {
+  line-height: 1em;
+}
+
 // LETTER SPACING
-.h7 {
+.h7, .h8 {
   letter-spacing: 1;
 }
 
@@ -65,7 +70,6 @@ a {
 }
 
 @include media(min-width $landscape) {
-  .h1 { font-size: 3em; }
   .h2 { font-size: 2.25em; }
   .h3 { font-size: 1.875em; }
   .h4 { font-size: 1.5em; }
@@ -74,6 +78,12 @@ a {
   .h7 { font-size: 0.875em; }
   .h8 { font-size: 0.625em; }
   .button { font-size: 1em; }
+}
+@include media(min-width $desktop) {
+  .h1 { font-size: 3em; }
+}
+@include media(max-width $desktop min-width $landscape) {
+  .h1 { font-size: 2.4em; }
 }
 @include media(max-width $landscape) {
   .h1 { font-size: 1.875em; }

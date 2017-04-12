@@ -4,35 +4,166 @@
 }
 
 .primary-message {
-	h1 {
-		text-align: center;
-		@include media(max-width $tablet) {
-			.break {
-				display: block;
+	.inner {
+		@extend .margin-big-top;
+		@extend .margin-bottom;
+		h1 {
+			text-align: center;
+			@include media(max-width $tablet) {
+				.break {
+					display: block;
+				}
 			}
 		}
 	}
 }
 
 .primary-message-buckets {
-	li {
-		text-align: center;
-		.primary-message-svg {
-			@include media(min-width $landscape) {
-				@include size(9.6em 7.2em);
+	.inner {
+		@extend .margin-big-bottom;
+		li {
+			text-align: center;
+			.primary-message-svg {
+				@include media(min-width $landscape) {
+					@include size(9.6em 7.2em);
+				}
+				@include media(max-width $landscape) {
+					@include size(9.6em 7.2em);
+				}
+				display: inline-block;
+				.svg-texture {
+					fill: lighten($black,60%);
+				}
 			}
-			@include media(max-width $landscape) {
-				@include size(9.6em 7.2em);
-			}
-			display: inline-block;
-			.svg-texture {
-				fill: lighten($black,60%);
+			.h7 {
+				@include media(min-width $landscape) {
+					.break {
+						display: block;
+					}
+				}
 			}
 		}
-		.h7 {
+	}
+}
+
+.project-featured {
+	.project-photo {
+		@include size(auto 20em);
+		background-image: url("../img/photo-westgate.png");
+		background-size: cover;
+		@include media(min-width $desktop) {
+			@include span-columns(7);
+			@include shift(2.5);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+	.project-info {
+		@extend .margin-top;
+		@extend .margin-big-bottom;
+		@include media(min-width $desktop) {
+			@include span-columns(7);
+			@include shift(2.5);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.project-info-title {
 			@include media(min-width $landscape) {
-				.break {
-					display: block;
+				@include span-columns(8);
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(12);
+			}
+			.h5 {
+				@extend .margin-top;
+			}
+		}
+		.project-info-cta {
+			@include media(min-width $landscape) {
+				float: right;
+			}
+			@include media(max-width $landscape) {
+				@include margin(2em 0 0);
+			}
+		}
+	}
+}
+
+.project-list-map {
+	background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+	background-size: 20em;
+	.inner {
+		h1 {
+			text-align: center;
+			@extend .padding-top;
+			@include media(max-width $landscape) {
+				@include span-columns(8);
+				@include shift(2);
+			}
+		}
+	}
+	.map {
+		text-align: center;
+		@extend .margin-big-top;
+		@extend .margin-big-bottom;
+		@include media(min-width $tablet) {
+			@include span-columns(5);
+			@include shift(1);
+		}
+		@include media(max-width $tablet min-width $landscape) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $landscape) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.svg {
+			@include media(min-width $desktop) {
+				@include size(100% 26em);
+			}
+			@include media(max-width $desktop min-width $tablet) {
+				@include size(100% 20em);
+			}
+			@include media(max-width $tablet) {
+				@include size(100% 16em);
+			}
+		}
+	}
+	.project-list {
+		@include media(min-width $desktop) {
+			@include span-columns(5);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(6);
+			@include omega;
+		}
+		@include media(max-width $tablet) {
+			display: none;
+		}
+		@extend .margin-big-top;
+		@extend .margin-big-bottom;
+		.project-list-region {
+			@include span-columns(6);
+			@include omega(2n);
+			.h7 {
+				@extend .margin-bottom;
+			}
+			ul {
+				li {
+					@extend .margin-bottom;
 				}
 			}
 		}

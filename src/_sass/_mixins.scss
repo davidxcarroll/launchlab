@@ -4,12 +4,23 @@
 
 @each $direction in top, bottom, left, right {
 	.margin-#{$direction} {
-		margin-#{$direction}: .4em;
+		margin-#{$direction}: 1em;
 	}
 }
 @each $direction in top, bottom, left, right {
 	.margin-big-#{$direction} {
-		margin-#{$direction}: 2em;
+		margin-#{$direction}: 3.75em;
+	}
+}
+
+@each $direction in top, bottom, left, right {
+	.padding-#{$direction} {
+		padding-#{$direction}: 1em;
+	}
+}
+@each $direction in top, bottom, left, right {
+	.padding-big-#{$direction} {
+		padding-#{$direction}: 3.75em;
 	}
 }
 
@@ -22,6 +33,53 @@
 
 // EXTENDS
 // ============================================================
+
+.cta {
+	display: inline-block;
+	@extend .button;
+	a {
+		display: block;
+		@include pad(.6em 1em);
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+		background-color: $link;
+	}
+}
+
+.cta-square {
+	display: inline-block;
+	position: relative;
+	@extend .button;
+	a {
+		display: block;
+		@include size(8em auto);
+		text-align: center;
+		@include pad(2.5em 1em);
+		color: $white;
+		&:hover {
+			color: $white;
+			.cta-arrow {
+				transform: translate(.2em,-.2em);
+			}
+		}
+		background-color: $link;
+	}
+	.cta-arrow {
+		position: absolute;
+		display: block;
+		@include size(.6em);
+		top: .5em;
+		right: .5em;
+		border-top: 4px solid $white;
+		border-right: 4px solid $white;
+	}
+}
+
+.clearfix {
+	clear: both;
+}
 
 .hide {
 	display: none;

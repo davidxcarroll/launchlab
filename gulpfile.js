@@ -29,20 +29,11 @@ gulp.task('sass', function() {
 var pug = require('gulp-pug');
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('./src/**/!(_)*.pug')
+  return gulp.src(['./src/**/!(_)*.pug', '!.src/{_includes,_includes/**}'])
   .pipe(pug({
     pretty: true
   }))
   .pipe(gulp.dest('./public'))
-});
-
-
-// WATCH
-// ============================================================
-
-gulp.task('watch', function() {
-  gulp.watch(['./src/**/*.pug'], ['pug']),
-  gulp.watch(['./src/_sass/**/*.scss'],['sass']);
 });
 
 // LIVE RELOAD
@@ -61,7 +52,16 @@ gulp.task('html', function () {
   gulp.src('./public/**/*.html')
     .pipe(connect.reload());
 });
- 
+
+
+// WATCH
+// ============================================================
+
+gulp.task('watch', function() {
+  gulp.watch(['./src/**/*.pug'], ['pug']),
+  gulp.watch(['./src/_sass/**/*.scss'],['sass']);
+});
+
 // TRIGGER
 // ============================================================
 
