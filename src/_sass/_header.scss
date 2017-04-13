@@ -1,7 +1,6 @@
 // HEADER =======================
 
 .nav {
-	// background-color: $white;
 	background-image: url(../img/bg-halftone-white-2@2x.png);
 	background-size: 20em;
 	ul {
@@ -70,9 +69,13 @@
 .hero-home {
 	position: relative;
 	.nav-home {
-		@include media(min-width $tablet) {
+		@include media(min-width $desktop) {
 			@include span-columns(8);
 			@include shift(2);
+		}
+		@include media(min-width $desktop max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
 		}
 		.nav-button-home {
 			@include size(9.375em auto);

@@ -39,3 +39,152 @@
 		}
 	}
 }
+
+.project-featured {
+	.project-photo {
+		@include media(min-width $desktop) {
+			@include span-columns(9);
+			@include shift(1.5);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.stats {
+			@include span-columns(3);
+			@include shift(9);
+		}
+	}
+	.project-info {
+		@include media(min-width $desktop) {
+			@include span-columns(9);
+			@include shift(1.5);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.project-info-title {
+			@include media(min-width $landscape) {
+				@include span-columns(9);
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(12);
+			}
+		}
+		.project-info-cta {
+			@include media(min-width $landscape) {
+				@include span-columns(3);
+				@include omega;
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(12);
+			}
+		}
+	}
+}
+
+.project-list-map {
+	.inner {
+		h1 {
+			@include media(max-width $landscape) {
+				@include span-columns(8);
+				@include shift(2);
+			}
+		}
+	}
+	.map {
+		@include media(min-width $tablet) {
+			@include span-columns(5);
+			@include shift(1);
+		}
+		@include media(max-width $tablet min-width $landscape) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $landscape) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+	.project-list {
+		@include media(min-width $desktop) {
+			@include span-columns(5);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(6);
+			@include omega;
+		}
+		@extend .margin-big-top;
+		@extend .margin-big-bottom;
+		.project-list-region {
+			@include span-columns(6);
+			@include omega(2n);
+		}
+	}
+}
+
+.testimonial {
+	.inner {
+		.content {
+			@include media(min-width $landscape) {
+				@include span-columns(8);
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+		}
+		.quote {
+			@include span-columns(1);
+			@include shift(1);
+		}
+	}
+}
+
+.contact {
+	.inner {
+		@include media(min-width $desktop) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $desktop min-width $mobile) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		@include media(max-width $mobile) {
+			@include span-columns(12);
+		}
+		.content {
+			@include span-columns(10);
+			@include shift(1);
+			.contact-fields {
+				@include media(min-width $tablet) {
+					@include span-columns(8);
+				}
+				@include media(max-width $tablet) {
+					@include span-columns(12);
+				}
+			}
+			.contact-submit {
+				input[type="submit"] {
+					@include media(min-width $tablet) {
+						@include span-columns(3);
+						@include shift(1);
+					}
+					@include media(max-width $tablet) {
+						@include span-columns(6);
+					}
+				}
+			}
+		}
+	}
+}

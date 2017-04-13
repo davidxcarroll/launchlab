@@ -54,7 +54,6 @@
 	@extend .button;
 	a {
 		display: block;
-		@include size(8em auto);
 		text-align: center;
 		@include pad(2.5em 1em);
 		color: $white;
@@ -74,6 +73,12 @@
 		right: .5em;
 		border-top: 4px solid $white;
 		border-right: 4px solid $white;
+		@include media(min-width $landscape) {
+			@include size(.6em);
+		}
+		@include media(max-width $landscape) {
+			@include size(1em);
+		}
 	}
 }
 

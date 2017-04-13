@@ -1,8 +1,24 @@
 div.outer.footer
 	div.inner
-		div.content.content-footer
-			p.
-				Copyright &copy;2017 Launch Lab
+		div.footer-column.footer-logo
+			div.svg
+				include _svg-logo-mark-dark.pug
+		div.footer-column.footer-nav
+			ul
+				include _include-nav-basic
+		div.footer-column.footer-social
+			ul
+				li
+					a(href="#") Medium
+				li
+					a(href="#") Linkedin
+				li
+					a(href="#") Twitter
+		div.footer-column.footer-info
+			p contact@launchlab.marketing
+			p 303.220.2080
+			p &copy;2017 Launch Lab
+	div.clearfix
 
 script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 include script.js

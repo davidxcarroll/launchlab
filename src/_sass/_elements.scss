@@ -48,52 +48,39 @@
 
 .project-featured {
 	.project-photo {
-		@include size(auto 20em);
 		background-image: url("../img/photo-westgate.png");
 		background-size: cover;
-		@include media(min-width $desktop) {
-			@include span-columns(7);
-			@include shift(2.5);
-		}
 		@include media(max-width $desktop min-width $tablet) {
-			@include span-columns(8);
-			@include shift(2);
+			height: 15em;
 		}
 		@include media(max-width $tablet) {
-			@include span-columns(10);
-			@include shift(1);
+			height: 10em;
+		}
+		.stats {
+			.stat {
+				@include media(min-width $desktop) {
+					display: block;
+					@include margin(0 0 1em);
+					@include pad(2.5em 1em);
+					text-align: center;
+					background-image: url("../img/bg-halftone-white-2@2x.png");
+					background-size: 22em;
+				}
+				@include media(max-width $desktop) {
+					display: none;
+				}
+			}
 		}
 	}
 	.project-info {
 		@extend .margin-top;
 		@extend .margin-big-bottom;
-		@include media(min-width $desktop) {
-			@include span-columns(7);
-			@include shift(2.5);
-		}
-		@include media(max-width $desktop min-width $tablet) {
-			@include span-columns(8);
-			@include shift(2);
-		}
-		@include media(max-width $tablet) {
-			@include span-columns(10);
-			@include shift(1);
-		}
 		.project-info-title {
-			@include media(min-width $landscape) {
-				@include span-columns(8);
-			}
-			@include media(max-width $landscape) {
-				@include span-columns(12);
-			}
 			.h5 {
 				@extend .margin-top;
 			}
 		}
 		.project-info-cta {
-			@include media(min-width $landscape) {
-				float: right;
-			}
 			@include media(max-width $landscape) {
 				@include margin(2em 0 0);
 			}
@@ -108,28 +95,12 @@
 		h1 {
 			text-align: center;
 			@extend .padding-top;
-			@include media(max-width $landscape) {
-				@include span-columns(8);
-				@include shift(2);
-			}
 		}
 	}
 	.map {
 		text-align: center;
 		@extend .margin-big-top;
 		@extend .margin-big-bottom;
-		@include media(min-width $tablet) {
-			@include span-columns(5);
-			@include shift(1);
-		}
-		@include media(max-width $tablet min-width $landscape) {
-			@include span-columns(8);
-			@include shift(2);
-		}
-		@include media(max-width $landscape) {
-			@include span-columns(10);
-			@include shift(1);
-		}
 		.svg {
 			@include media(min-width $desktop) {
 				@include size(100% 26em);
@@ -143,27 +114,76 @@
 		}
 	}
 	.project-list {
-		@include media(min-width $desktop) {
-			@include span-columns(5);
-		}
-		@include media(max-width $desktop min-width $tablet) {
-			@include span-columns(6);
-			@include omega;
-		}
 		@include media(max-width $tablet) {
 			display: none;
 		}
 		@extend .margin-big-top;
 		@extend .margin-big-bottom;
 		.project-list-region {
-			@include span-columns(6);
-			@include omega(2n);
 			.h7 {
 				@extend .margin-bottom;
 			}
 			ul {
 				li {
 					@extend .margin-bottom;
+				}
+			}
+		}
+	}
+}
+
+.testimonial {
+	@extend .margin-big-top;
+	@extend .margin-big-bottom;
+	.inner {
+		.content {
+			.source {
+				@extend .margin-big-top;
+			}
+		}
+		.quote {
+			@include margin(null null 2em);
+			@include media(min-width $landscape) {
+				@include size(2em);
+			}
+			@include media(max-width $landscape) {
+				@include size(3em);
+			}
+		}
+	}
+}
+
+.contact {
+	.inner {
+		background-color: $black;
+		@extend .margin-big-bottom;
+		@extend .padding-big-bottom;
+		.content {
+			position: relative;
+			@extend .padding-big-top;
+			.h1 {
+				@extend .margin-bottom;
+				color: $white;
+				text-align: center;
+			}
+			.contact-fields {
+				input {
+					@extend .margin-bottom;
+				}
+				label {
+					color: $white;
+				}
+			}
+			.contact-submit {
+				input[type="submit"] {
+					@include media(min-width $tablet) {
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+					@include media(max-width $tablet) {
+						@include margin(2em 0 0);
+					}
 				}
 			}
 		}

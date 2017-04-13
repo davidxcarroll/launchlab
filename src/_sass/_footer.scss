@@ -2,7 +2,48 @@
 // FOOTER =======================
 
 .footer {
-	text-align: center;
-	@extend .margin-big-top;
-	@extend .margin-big-bottom;
+	background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+	background-size: 20em;
+	.inner {
+		@extend .padding-big-top;
+		@extend .padding-big-bottom;
+		text-align: center;
+		@include media(min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.footer-column {
+			text-align: left;
+			@extend .h7;
+			li, p {
+				@extend .margin-bottom;
+			}
+			.svg {
+				@include size(4em 8em);
+			}
+		}
+		.footer-logo,
+		.footer-nav,
+		.footer-social {
+			@include media(min-width $landscape){
+				@include span-columns(2.666);
+			}
+			@include media(max-width $landscape){
+				@include span-columns(4);
+			}
+		}
+		.footer-info {
+			@include media(min-width $landscape){
+				@include span-columns(4);
+				@include omega;
+			}
+			@include media(max-width $landscape){
+				@include span-columns(8);
+			}
+		}
+	}
 }
