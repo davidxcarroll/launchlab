@@ -735,7 +735,7 @@ a {
   .h4, h4 {
     font-size: 0.9em; }
   .h5, h5, input[type="submit"] {
-    font-size: 0.75em; }
+    font-size: 1em; }
   .h6, h6 {
     font-size: 0.875em; }
   .h7, .footer .inner .footer-column {
@@ -1342,8 +1342,15 @@ input[type="submit"] {
   width: 5em;
   float: left;
   margin-right: 1em;
-  background-image: url("../img/client-mark_waltrip.jpg");
   background-size: cover; }
+  .testimonial .inner .content .source .source-photo.source-photo-mark_waltrip {
+    background-image: url("../img/client-mark_waltrip.jpg"); }
+  .testimonial .inner .content .source .source-photo.source-photo-richard_knorr {
+    background-image: url("../img/client-richard_knorr.jpg"); }
+  .testimonial .inner .content .source .source-photo.source-photo-kemil_rizk {
+    background-image: url("../img/client-kemil_rizk.jpg"); }
+  .testimonial .inner .content .source .source-photo.source-photo-larry_hall {
+    background-image: url("../img/client-mark_waltrip.jpg"); }
 
 .testimonial .inner .quote {
   margin-bottom: 2em; }

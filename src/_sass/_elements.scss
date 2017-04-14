@@ -152,8 +152,19 @@
 					@include size(5em);
 					float: left;
 					margin-right: 1em;
-					background-image: url("../img/client-mark_waltrip.jpg");
 					background-size: cover;
+					&.source-photo-mark_waltrip {
+						background-image: url("../img/client-mark_waltrip.jpg");
+					}
+					&.source-photo-richard_knorr {
+						background-image: url("../img/client-richard_knorr.jpg");
+					}
+					&.source-photo-kemil_rizk {
+						background-image: url("../img/client-kemil_rizk.jpg");
+					}
+					&.source-photo-larry_hall {
+						background-image: url("../img/client-mark_waltrip.jpg");
+					}
 				}
 				.h5 {
 					@extend .margin-top;
