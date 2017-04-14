@@ -19,6 +19,56 @@
 	}
 }
 
+.project {
+	.inner {
+		.project-photo {
+			@include media(min-width $tablet) {
+				height: 60%;
+			}
+			@include media(max-width $tablet) {
+				height: 20em;
+			}
+		}
+		.project-content {
+			@include media(min-width $desktop) {
+				@include span-columns(8);
+				@include shift(2);
+			}
+			@include media(max-width $desktop) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+			.timeline-date {
+				@include media(min-width $tablet) {
+					@include span-columns(3);
+				}
+				@include media(max-width $tablet) {
+					@include span-columns(12);
+				}
+			}
+			.timeline-info {
+				@include media(min-width $tablet) {
+					@include span-columns(7);
+					@include shift(1);
+					@include omega;
+				}
+				@include media(max-width $tablet) {
+					@include span-columns(12);
+				}
+			}
+		}
+		// .project-sidebar {
+		// 	@include media(min-width $tablet) {
+		// 		@include span-columns(3);
+		// 		@include omega;
+		// 	}
+		// 	@include media(max-width $tablet) {
+		// 		display: none;
+		// 	}
+		// }
+	}
+}
+
 .buckets-3-col {
 	ul {
 			@include media(min-width $tablet) {
@@ -188,3 +238,39 @@
 		}
 	}
 }
+
+.featured-article {
+	.inner {
+		@include media(min-width $landscape) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $landscape) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.content {
+			.article-photo {
+				@include media(min-width $landscape) {
+					@include span-columns(5);
+				}
+				@include media(max-width $landscape) {
+					@include span-columns(10);
+					@include shift(1);
+				}
+			}
+			.article-summary {
+				@include media(min-width $landscape) {
+					@include span-columns(6);
+					@include shift(1);
+					@include omega;
+				}
+				@include media(max-width $landscape) {
+					@include span-columns(10);
+					@include shift(1);
+				}
+			}
+		}
+	}
+}
+

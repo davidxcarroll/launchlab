@@ -41,7 +41,25 @@
 						display: block;
 					}
 				}
+				@include media(max-width $landscape) {
+					@include margin(null null 2em);
+				}
 			}
+		}
+	}
+}
+
+.stats {
+	.stat {
+		@include media(min-width $desktop) {
+			display: block;
+			@include margin(0 0 1em);
+			@include pad(2.5em 1em);
+			text-align: center;
+			background-size: 22em;
+		}
+		@include media(max-width $desktop) {
+			display: none;
 		}
 	}
 }
@@ -59,15 +77,7 @@
 		.stats {
 			.stat {
 				@include media(min-width $desktop) {
-					display: block;
-					@include margin(0 0 1em);
-					@include pad(2.5em 1em);
-					text-align: center;
 					background-image: url("../img/bg-halftone-white-2@2x.png");
-					background-size: 22em;
-				}
-				@include media(max-width $desktop) {
-					display: none;
 				}
 			}
 		}
@@ -138,7 +148,16 @@
 	.inner {
 		.content {
 			.source {
-				@extend .margin-big-top;
+				.source-photo {
+					@include size(5em);
+					float: left;
+					margin-right: 1em;
+					background-image: url("../img/client-mark_waltrip.jpg");
+					background-size: cover;
+				}
+				.h5 {
+					@extend .margin-top;
+				}
 			}
 		}
 		.quote {
@@ -184,6 +203,79 @@
 					@include media(max-width $tablet) {
 						@include margin(2em 0 0);
 					}
+				}
+			}
+		}
+	}
+}
+
+.featured-article {
+	@extend .margin-big-bottom;
+	.inner {
+		.content {
+			.article-photo {
+				height: 20em;
+				background-image: url("../img/photo-westgate.png");
+				background-size: cover;
+			}
+			.article-summary {
+				.h5 {
+					@extend .margin-bottom;
+				}
+				p {
+					@extend .margin-top;
+				}
+				@include media(max-width $tablet) {
+					@include margin(2em null null);
+				}
+			}
+		}
+	}
+}
+
+.page-title {
+	@extend .margin-big-top;
+	@extend .margin-big-bottom;
+	.h2 {
+		text-align: center;
+	}
+}
+
+.project {
+	.inner {
+		.project-photo {
+			background-image: url("../img/photo-westgate.png");
+			background-size: cover;
+		}
+		.project-content {
+			@extend .margin-big-top;
+			.project-title {
+				@extend .margin-big-bottom;
+				.h5 {
+					@extend .margin-top;
+				}
+			}
+			.project-body {
+				.timeline-block {
+					@include outer-container;
+					@extend .margin-big-bottom;
+					.timeline-date {
+						@include media(min-width $tablet) {
+							text-align: right;
+						}
+						@include media(max-width $tablet) {
+							margin: 0 0 1em;
+						}
+					}
+					.timeline-info {}
+				}
+			}
+		}
+		.project-sidebar {
+			@extend .margin-big-top;
+			.stats {
+				.stat {
+					background-image: url("../img/bg-halftone-black-1-trans@2x.png");
 				}
 			}
 		}

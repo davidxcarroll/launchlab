@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:400,700,900|Oswald:500"/>
   </head>
   <body></body>
-  <div class="nav-mobile">
-    <p class="button">Menu<span class="nav-mobile-icon nav-mobile-icon-menu svg show"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <div class="nav-default">
+    <div class="nav-mobile">
+      <p class="button">Menu<span class="nav-mobile-icon"><span class="nav-mobile-icon-menu svg show"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 <path d="M4,4 L27,4 L27,8.6 L4,8.6 L4,4 Z M4,13.2 L27,13.2 L27,17.8 L4,17.8 L4,13.2 Z M4,22.4 L27,22.4 L27,27 L4,27 L4,22.4 Z"></path>
-</svg></span></p>
-  </div>
-  <div class="outer nav">
-    <ul class="inner">
-      <li class="nav-button-home"><a href="index.html"><span class="svg nav-logo"><svg viewBox="0 0 52 110" xmlns="http://www.w3.org/2000/svg">
+</svg></span><span class="nav-mobile-icon-close svg hide"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.7580736,11.5053824 L8.25269119,5.00000001 L5,8.25269121 L11.5053824,14.7580736 L5.00000003,21.263456 L8.25269116,24.5161471 L14.7580735,18.0107647 L21.263456,24.5161472 L24.5161472,21.263456 L18.0107647,14.7580735 L24.5161471,8.25269113 L21.263456,5 L14.7580736,11.5053824 Z"></path>
+</svg></span></span></p>
+    </div>
+    <div class="outer nav">
+      <ul class="inner">
+        <li>
+          <div class="nav-button-home"><a href="index.html"><span class="svg nav-logo"><svg viewBox="0 0 52 110" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <pattern id="pattern-1" width="387.599977" height="133.799992" x="-356.639898" y="-81.5366549" patternUnits="userSpaceOnUse">
 <use xlink:href="#image-2" transform="scale(0.599999964,0.599999964)"></use>
@@ -26,13 +30,15 @@
 </defs>
 <path d="M20.6399211,0 L51.6,30.2632508 L30.959783,50.4384298 L0.000197292203,20.1751791 L20.6399211,0 Z M0,49.5094151 L7.50252924,42.1762297 L30.9600789,65.105813 L44.0972735,52.2633371 L51.5998027,59.5970046 L30.9600789,79.7731479 L0,49.5094151 Z M0,78.8438921 L7.50252924,71.5102246 L30.9600789,94.4398079 L44.0972735,81.5978142 L51.5998027,88.9314816 L30.9600789,109.107143 L0,78.8438921 Z" fill="#FFFFFF"></path>
 <path d="M30.9600789,79.7731479 L30.9600789,65.105813 L44.0972735,52.2633371 L51.5998027,59.5970046 L30.9600789,79.7731479 Z M30.9600789,109.107143 L30.9600789,94.4398079 L44.0972735,81.5978142 L51.5998027,88.9314816 L30.9600789,109.107143 Z" fill="url(#pattern-1)"></path>
-</svg></span><span class="break">Launch </span><span class="break">Lab</span></a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="testimonials.html">Acclaim</a></li>
-      <li><a href="whitepapers.html">Whitepapers</a></li>
-      <li><a href="about.html">About</a></li>
-      <li class="nav-button-contact"><a href="contact.html">Contact</a></li>
-    </ul>
+</svg></span><span class="break">Launch </span><span class="break">Lab</span></a></div>
+        </li>
+        <li class="nav-item"><a href="projects.html">Projects</a></li>
+        <li class="nav-item"><a href="testimonials.html">Acclaim</a></li>
+        <li class="nav-item"><a href="whitepapers.html">Whitepapers</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item nav-button-contact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </div>
   <div class="outer footer">
     <div class="inner">
@@ -63,10 +69,11 @@
       </div>
       <div class="footer-column footer-nav">
         <ul>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="testimonials.html">Acclaim</a></li>
-          <li><a href="whitepapers.html">Whitepapers</a></li>
-          <li><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="testimonials.html">Acclaim</a></li>
+          <li class="nav-item"><a href="whitepapers.html">Whitepapers</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item nav-button-contact"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-column footer-social">
@@ -77,7 +84,7 @@
         </ul>
       </div>
       <div class="footer-column footer-info">
-        <p>contact@launchlab.marketing</p>
+        <p>hello@launchlab.marketing</p>
         <p>303.220.2080</p>
         <p>&copy;2017 Launch Lab</p>
       </div>
@@ -88,7 +95,15 @@
 
 	$(document).ready(function(){
 	  $(".nav-mobile .button").click(function(){
-	    $(".nav").toggle();
+	    $(".nav .nav-item").toggle();
+	    $(".nav-mobile-icon-menu").toggle();
+	    $(".nav-mobile-icon-close").toggle();
+	    $(".nav-logo").toggle();
+	    $(".nav-button-home").toggle();
+	    if($('.nav .inner li div').hasClass('nav-button-home')){
+		  	$('.nav .inner li div').removeClass('nav-button-home')
+			} else if ($('.nav .inner li div').addClass('nav-button-home'))
+	    console.log("menu");
 	  });
 	});
 

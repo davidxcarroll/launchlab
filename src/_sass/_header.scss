@@ -1,9 +1,9 @@
 // HEADER =======================
 
 .nav {
-	background-image: url(../img/bg-halftone-white-2@2x.png);
-	background-size: 20em;
 	ul {
+		background-image: url(../img/bg-halftone-white-2@2x.png);
+		background-size: 20em;
 		li {
 			@include media(min-width $tablet) {
 				@include span-columns(2);
@@ -29,7 +29,6 @@
 // LOGO
 
 .nav-button-home {
-	@include size(9.375em auto);
 	background-color: $black;
 	a {
 		font-weight: 900;
@@ -47,50 +46,97 @@
 			letter-spacing: 2;
 			line-height: 1.1em;
 		}
-		.nav-logo {
-			display: block;
-			@include media(min-width $landscape) {
-				@include size(auto 3.6em);
-				@include margin(0 auto .6em);
-			}
-			@include media(max-width $landscape) {
-				@include size(auto 3em);
-				@include margin(0 auto .4em);
+	}
+}
+
+.nav-home {
+	.nav-button-home {
+		@include size(9.375em auto);
+	}
+	.nav-logo {
+		display: block;
+		@include size(auto 3.6em);
+		@include margin(0 auto .6em);
+	}
+	.break {
+		display: block;
+	}
+}
+
+.nav-default {
+	.nav-button-home {
+		@include media(min-width $tablet) {
+			@include size(9.375em auto);
+		}
+		@include media(max-width $tablet) {
+			@include size(11em auto);
+			@include pad(.5em 0);
+			a {
+				text-align: left;
 			}
 		}
+	}
+	.nav-logo {
+		display: block;
+		@include media(min-width $tablet) {
+			@include size(auto 3.6em);
+			@include margin(0 auto .6em);
+		}
+		@include media(max-width $tablet) {
+			@include size(1em 2em);
+			margin: 0 1em 1em;
+			float: left;
+		}
+	}
+	@include media(min-width $tablet) {
 		.break {
 			display: block;
 		}
 	}
 }
 
-// LOGO HOME
+// DEFAULT
+
+.nav-default {
+	@include media(min-width $tablet) {
+		.nav .inner li:nth-child(2) {
+			margin-left: 17%;
+		}
+	}
+	.nav-button-home {
+		position: absolute;
+		top: 0;
+	}
+}
+
+// HOME
 
 .hero-home {
 	position: relative;
-	.nav-home {
-		@include media(min-width $desktop) {
-			@include span-columns(8);
-			@include shift(2);
-		}
-		@include media(min-width $desktop max-width $tablet) {
-			@include span-columns(10);
-			@include shift(1);
-		}
-		.nav-button-home {
-			@include size(9.375em auto);
-			position: absolute;
-			bottom: -1.875em;
-			left: 0;
-			right: 0;
-			margin: auto;
-		}
-		ul {
-			li {
-				@include media(min-width $tablet) {
-					@include span-columns(2.4);
-					@include omega(6n);
-				}
+}
+
+.nav-home {
+	@include media(min-width $desktop) {
+		@include span-columns(8);
+		@include shift(2);
+	}
+	@include media(min-width $desktop max-width $tablet) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+	.nav-button-home {
+		@include size(9.375em auto);
+		position: absolute;
+		bottom: -1.875em;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	ul {
+		li {
+			@include media(min-width $tablet) {
+				@include span-columns(2.4);
+				@include omega(6n);
 			}
 		}
 	}
@@ -106,17 +152,29 @@
 
 // CONTACT BUTTON
 
-.nav-button-contact {
-	background-color: $link;
-	a {
-		color: $white;
-		&:hover {
-			background-color: $link-hover;
+.nav {
+	.nav-button-contact {
+		@include media(min-width $tablet) {
+			background-color: $link;
+			a {
+				color: $white;
+				&:hover {
+					background-color: $link-hover;
+				}
+			}
 		}
 	}
 }
 
 // NAV ON MOBILE
+
+.nav {
+	.nav-item {
+		@include media(max-width $tablet) {
+			display: none;
+		}
+	}
+}
 
 .nav-mobile {
 	@include media(min-width $tablet) {
@@ -124,7 +182,6 @@
 	}
 	@include fill-parent;
 	text-align: right;
-	// background-color: $white;
 	p {
 		display: inline-block;
 		@include pad(1em);
