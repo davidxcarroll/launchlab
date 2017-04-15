@@ -66,7 +66,7 @@
 
 .project-featured {
 	.project-photo {
-		background-image: url("../img/photo-westgate.png");
+		background-image: url("../img/photo-resort.jpg");
 		background-size: cover;
 		@include media(max-width $desktop min-width $tablet) {
 			height: 15em;
@@ -226,7 +226,7 @@
 		.content {
 			.article-photo {
 				height: 20em;
-				background-image: url("../img/photo-westgate.png");
+				background-image: url("../img/photo-resort.jpg");
 				background-size: cover;
 			}
 			.article-summary {
@@ -253,9 +253,14 @@
 }
 
 .project {
+	@include media(min-width $tablet) {
+		position: relative;
+		z-index: -1;
+		top: -3.5em;
+	}
 	.inner {
 		.project-photo {
-			background-image: url("../img/photo-westgate.png");
+			background-image: url("../img/photo-resort.jpg");
 			background-size: cover;
 		}
 		.project-content {
@@ -287,6 +292,73 @@
 			.stats {
 				.stat {
 					background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+				}
+			}
+		}
+	}
+}
+
+.team {
+	@include media(min-width $tablet) {
+		margin-bottom: 5em;
+	}
+	.inner {
+		.team-member {
+			li {
+				@include media(max-width $tablet) {
+					margin-bottom: 3em;
+				}
+				.team-member-info {
+					.h5 {
+						@include media(min-width $tablet) {
+							margin-top: 1em;
+						}
+						@extend .margin-bottom;
+					}
+					.h3 {}
+					p {
+						@extend .margin-top;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about-blurb {
+	@extend .padding-big-top;
+	@extend .padding-big-bottom;
+	background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+	background-size: 22em;
+}
+
+.awards {
+	.page-title {
+		margin-bottom: 1em;
+	}
+	@extend .margin-big-bottom;
+	.inner {
+		ul {
+			li.award {
+				@include media(max-width $landscape) {
+					margin-top: 2em;
+				}
+				.award-logo {}
+				.award-info {
+					.h5 {
+						@extend .margin-bottom;
+						@include media(min-width $tablet max-width $landscape) {
+							text-align: center;
+						}
+						@include media(max-width $mobile) {
+							clear: both;
+						}
+					}
+					ul {
+						li {
+							@extend .margin-top;
+						}
+					}
 				}
 			}
 		}

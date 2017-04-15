@@ -2,7 +2,7 @@
 
 .nav {
 	ul {
-		background-image: url(../img/bg-halftone-white-2@2x.png);
+		background-image: url(../img/bg-halftone-black-1-trans@2x.png);
 		background-size: 20em;
 		li {
 			@include media(min-width $tablet) {
@@ -147,6 +147,26 @@
 .nav-button {
 	@include media(max-width $tablet) {
 		display: none;
+	}
+}
+
+// HIGHLIGHTS
+
+@include media(min-width $tablet) {
+	@each $item in about, projects, contact, testimonials, whitepapers {
+		.nav-#{$item} {
+			.nav-item-#{$item} {
+				background-color: $white;
+			}
+		}
+	}
+}
+
+// BACKGROUND ADJUST FOR PROJECTS PAGE
+
+.nav-home, .nav-projects {
+	.nav ul {
+		background-image: url(../img/bg-halftone-white-2@2x.png);
 	}
 }
 

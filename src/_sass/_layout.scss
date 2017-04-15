@@ -274,3 +274,93 @@
 	}
 }
 
+.team {
+	.inner {
+		.team-member {
+			@include media(min-width $landscape) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+			li {
+				@include media(min-width $tablet) {
+					@include span-columns(4);
+					@include omega(3n);
+				}
+				.team-member-photo {
+					@include media(min-width $tablet) {
+						@include span-columns(10);
+						@include shift(1);
+					}
+					@include media(max-width $tablet) {
+						@include span-columns(3);
+					}
+				}
+				.team-member-info {
+					@include media(min-width $tablet) {
+						@include span-columns(10);
+						@include shift(1);
+					}
+					@include media(max-width $tablet) {
+						@include span-columns(8);
+						@include shift(1);
+						@include omega;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about-blurb {
+	.inner {
+		@include media(min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+}
+
+.awards {
+	.inner {
+		ul {
+			@include media(min-width $landscape) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+			li.award {
+				@include media(min-width $tablet) {
+					@include span-columns(4);
+					@include omega(3n);
+				}
+				@include media(max-width $tablet) {
+					@include span-columns(10);
+					@include shift(1);
+				}
+				.award-logo {
+					@include media(max-width $landscape min-width $mobile) {
+						@include span-columns(3);
+					}
+					@include media(max-width $mobile) {
+						@include span-columns(5);
+					}
+				}
+				.award-info {
+					@include media(max-width $landscape min-width $mobile) {
+						@include span-columns(8);
+						@include shift(1);
+						@include omega;
+					}
+				}
+			}
+		}
+	}
+}
+

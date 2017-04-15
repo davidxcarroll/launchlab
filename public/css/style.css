@@ -538,10 +538,10 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.margin-top, .project-featured .project-info, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"] {
+.margin-top, .project-featured .project-info, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
   margin-top: 1em; }
 
-.margin-bottom, .primary-message .inner, .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
+.margin-bottom, .primary-message .inner, .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
   margin-bottom: 1em; }
 
 .margin-left {
@@ -553,7 +553,7 @@ picture {
 .margin-big-top, .project-list-map .project-list, .primary-message .inner, .project-list-map .map, .testimonial, .page-title, .project .inner .project-content, .project .inner .project-sidebar {
   margin-top: 3.75em; }
 
-.margin-big-bottom, .project-list-map .project-list, .primary-message-buckets .inner, .project-featured .project-info, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .page-title, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block {
+.margin-big-bottom, .project-list-map .project-list, .primary-message-buckets .inner, .project-featured .project-info, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .page-title, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
   margin-bottom: 3.75em; }
 
 .margin-big-left {
@@ -574,10 +574,10 @@ picture {
 .padding-right {
   padding-right: 1em; }
 
-.padding-big-top, .contact .inner .content, .footer .inner {
+.padding-big-top, .contact .inner .content, .about-blurb, .footer .inner {
   padding-top: 3.75em; }
 
-.padding-big-bottom, .contact .inner, .footer .inner {
+.padding-big-bottom, .contact .inner, .about-blurb, .footer .inner {
   padding-bottom: 3.75em; }
 
 .padding-big-left {
@@ -741,7 +741,7 @@ a {
   .h7, .footer .inner .footer-column {
     font-size: 0.875em; }
   .h8 {
-    font-size: 0.375em; }
+    font-size: 0.5em; }
   .button, .cta, .cta-square, .nav ul li {
     font-size: 0.8em; } }
 
@@ -1254,6 +1254,161 @@ input[type="submit"] {
     .featured-article .inner .content .article-summary:last-child {
       margin-right: 0; } }
 
+@media screen and (min-width: 600px) {
+  .team .inner .team-member {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .team .inner .team-member:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 600px) {
+  .team .inner .team-member {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .team .inner .team-member:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .team .inner .team-member li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .team .inner .team-member li:last-child {
+      margin-right: 0; }
+    .team .inner .team-member li:nth-child(3n) {
+      margin-right: 0; }
+    .team .inner .team-member li:nth-child(3n+1) {
+      clear: left; } }
+
+@media screen and (min-width: 770px) {
+  .team .inner .team-member li .team-member-photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .team .inner .team-member li .team-member-photo:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .team .inner .team-member li .team-member-photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .team .inner .team-member li .team-member-photo:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .team .inner .team-member li .team-member-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .team .inner .team-member li .team-member-info:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .team .inner .team-member li .team-member-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 8.5298%;
+    margin-right: 0; }
+    .team .inner .team-member li .team-member-info:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .about-blurb .inner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .about-blurb .inner:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .about-blurb .inner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .about-blurb .inner:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 600px) {
+  .awards .inner ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .awards .inner ul:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .awards .inner ul li.award {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .awards .inner ul li.award:last-child {
+      margin-right: 0; }
+    .awards .inner ul li.award:nth-child(3n) {
+      margin-right: 0; }
+    .awards .inner ul li.award:nth-child(3n+1) {
+      clear: left; } }
+
+@media screen and (max-width: 770px) {
+  .awards .inner ul li.award {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .awards .inner ul li.award:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 600px) and (min-width: 420px) {
+  .awards .inner ul li.award .award-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .awards .inner ul li.award .award-logo:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 420px) {
+  .awards .inner ul li.award .award-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .awards .inner ul li.award .award-logo:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 600px) and (min-width: 420px) {
+  .awards .inner ul li.award .award-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 8.5298%;
+    margin-right: 0; }
+    .awards .inner ul li.award .award-info:last-child {
+      margin-right: 0; } }
+
 .hero-home {
   background-image: url("../img/photo-resort.jpg");
   background-size: cover; }
@@ -1298,7 +1453,7 @@ input[type="submit"] {
     display: none; } }
 
 .project-featured .project-photo {
-  background-image: url("../img/photo-westgate.png");
+  background-image: url("../img/photo-resort.jpg");
   background-size: cover; }
   @media screen and (max-width: 1140px) and (min-width: 770px) {
     .project-featured .project-photo {
@@ -1383,7 +1538,7 @@ input[type="submit"] {
 
 .featured-article .inner .content .article-photo {
   height: 20em;
-  background-image: url("../img/photo-westgate.png");
+  background-image: url("../img/photo-resort.jpg");
   background-size: cover; }
 
 @media screen and (max-width: 770px) {
@@ -1393,8 +1548,14 @@ input[type="submit"] {
 .page-title .h2, .page-title h2 {
   text-align: center; }
 
+@media screen and (min-width: 770px) {
+  .project {
+    position: relative;
+    z-index: -1;
+    top: -3.5em; } }
+
 .project .inner .project-photo {
-  background-image: url("../img/photo-westgate.png");
+  background-image: url("../img/photo-resort.jpg");
   background-size: cover; }
 
 .project .inner .project-content .project-body .timeline-block {
@@ -1415,12 +1576,43 @@ input[type="submit"] {
 .project .inner .project-sidebar .stats .stat {
   background-image: url("../img/bg-halftone-black-1-trans@2x.png"); }
 
+@media screen and (min-width: 770px) {
+  .team {
+    margin-bottom: 5em; } }
+
+@media screen and (max-width: 770px) {
+  .team .inner .team-member li {
+    margin-bottom: 3em; } }
+
+@media screen and (min-width: 770px) {
+  .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"] {
+    margin-top: 1em; } }
+
+.about-blurb {
+  background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+  background-size: 22em; }
+
+.awards .page-title {
+  margin-bottom: 1em; }
+
+@media screen and (max-width: 600px) {
+  .awards .inner ul li.award {
+    margin-top: 2em; } }
+
+@media screen and (min-width: 770px) and (max-width: 600px) {
+  .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"] {
+    text-align: center; } }
+
+@media screen and (max-width: 420px) {
+  .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"] {
+    clear: both; } }
+
 .patterns-container {
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.2); }
 
 .nav ul {
-  background-image: url(../img/bg-halftone-white-2@2x.png);
+  background-image: url(../img/bg-halftone-black-1-trans@2x.png);
   background-size: 20em; }
   .nav ul li {
     text-align: center; }
@@ -1567,6 +1759,21 @@ input[type="submit"] {
 @media screen and (max-width: 770px) {
   .nav-button {
     display: none; } }
+
+@media screen and (min-width: 770px) {
+  .nav-about .nav-item-about {
+    background-color: #FFFFFF; }
+  .nav-projects .nav-item-projects {
+    background-color: #FFFFFF; }
+  .nav-contact .nav-item-contact {
+    background-color: #FFFFFF; }
+  .nav-testimonials .nav-item-testimonials {
+    background-color: #FFFFFF; }
+  .nav-whitepapers .nav-item-whitepapers {
+    background-color: #FFFFFF; } }
+
+.nav-home .nav ul, .nav-projects .nav ul {
+  background-image: url(../img/bg-halftone-white-2@2x.png); }
 
 @media screen and (min-width: 770px) {
   .nav .nav-button-contact {

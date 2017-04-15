@@ -2,5 +2,107 @@ extends _base.pug
 
 block content
 
-	div.nav-default
+	div.nav-default.nav-about
 		include _include-header.pug
+
+	div.outer.page-title
+		h2.h2 The key players
+	
+	div.outer.team
+		div.inner
+			ul.team-member
+				li
+					div.team-member-photo
+						img(src="/img/team-micki-color-2.jpg")
+					div.team-member-info
+						h5 The Leader
+						h3 Micki Clark
+						p Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu.
+					div.clearfix
+				li
+					div.team-member-photo
+						img(src="/img/team-eli-color-2.jpg")
+					div.team-member-info
+						h5 The Innovator
+						h3 Eli Regalado
+						p Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu.
+					div.clearfix
+				li
+					div.team-member-photo
+						img(src="/img/team-tom-color-2.jpg")
+					div.team-member-info
+						h5 The Sage
+						h3 Tom Clark
+						p Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu.
+					div.clearfix
+
+	div.outer.about-blurb
+		div.inner
+			h3.h3 Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+		div.clearfix
+
+	div.outer.awards
+		div.outer.page-title
+			h2.h2 National marketing awards
+		div.inner
+			ul
+				li.award
+					div.award-logo
+						include _svg-award-nahb.pug
+					div.award-info
+						h5 National Association of Homebuilders
+
+						mixin award(title, project)
+							li
+								h6.h6= title
+								p.h8.black-trans= project
+
+						ul
+							+award('Best Direct Mail', 'Roco Ki')
+							+award('Best Brochure for a Master Plan Community', 'The Club at Spanish Peaks')
+							+award('Best Brochure for a Master Plan Community', 'Mountain Air Country Club')
+							+award('Best Brochure for a Master Plan Community','Quechee Lakes Resort')
+							+award('Electronic Media, Best Video','The Club at Spanish Peaks')
+							+award('Best Marketing Program','The Club at Spanish Peaks')
+							+award('Best Print Ad','Promontory Club')
+							+award('Silver Award for Master Plan','Community Brochure','Grand Elk')
+							+award('Silver Direct Mail Award','Four Seasons Private Villas at Punta Mita')
+							+award('Silver Black and White Print Ad Award','The Penthouses at Hammock Beach')
+				li.award
+					div.award-logo
+						include _svg-award-arda.pug
+					div.award-info
+						h5 American Resort Development Association
+						ul
+							+award('Best Brochure','The Club at Spanish Peaks')
+							+award('Best Logo Design','Santiam River Club')
+							+award('Best Resort Video Production','The Club at Spanish Peaks')
+							+award('Best Integrated Marketing Campaign','The Club at Spanish Peaks')
+				li.award
+					div.award-logo
+						include _svg-award-sia.pug
+					div.award-info
+						h5 Summit International Awards
+						ul
+							+award('International Gold Award for Best Consumer Brochure','Mountain Air Country Club')
+							+award('International Silver Award for Best Consumer Brochure','Hammock Beach Resort')
+							+award('Leader Award for Website Design','Rendezvous Colorado')
+
+	div.outer.contact
+		div.inner
+			div.content
+				h1.h1 Let's get to work
+				div.contact-fields
+					label.h5 Name
+					input(type="text" placeholder="First Last")
+					label.h5 Email
+					input(type="text" placeholder="you@email.com")
+					label.h5 Phone
+					input(type="text" placeholder="123-456-7890")
+					label.h5 Message
+					textarea(placeholder="How can we help?")
+				div.contact-submit
+					input(type="submit" value="Send")
+		div.clearfix
+
+

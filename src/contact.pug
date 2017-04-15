@@ -2,5 +2,25 @@ extends _base.pug
 
 block content
 
-	div.nav-default
+	div.nav-default.nav-contact
 		include _include-header.pug
+
+	div.outer.page-title
+		h2.h2 Contact us
+
+	div.outer.contact
+		div.inner
+			div.content
+				h1.h1 Let's get to work
+				div.contact-fields
+					label.h5 Name
+					input(type="text" placeholder="First Last")
+					label.h5 Email
+					input(type="text" placeholder="you@email.com")
+					label.h5 Phone
+					input(type="text" placeholder="123-456-7890")
+					label.h5 Message
+					textarea(placeholder="How can we help?")
+				div.contact-submit
+					input(type="submit" value="Send")
+		div.clearfix
