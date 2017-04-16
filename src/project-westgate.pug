@@ -14,21 +14,48 @@ block content
 					h1.h1 Sales Success In Two Economic Eras
 					h5.h5 Westgate Resort, Park City, Utah
 				div.project-body
-					div.timeline-block
-						div.timeline-date
-							h5.h5 2006 &mdash; 2007
-						div.timeline-info
-							h4.h4 Sold 141 luxury units at $750 per sq. ft. in two presale launches over 10 months. Original Launch Sales: nearly $100M.
-					div.timeline-block
-						div.timeline-date
-							h5.h5 2008 &mdash; 2009
-						div.timeline-info
-							h4.h4 Real estate crash causes launch buyers to lose financing. Bank threatens foreclosure.
-					div.timeline-block
-						div.timeline-date
-							h5.h5 2010
-						div.timeline-info
-							h4.h4 Launch Lab was retained in 2010 to sell and close $10M by February 2011 to satisfy bank requirements. Developer’s construction loan repaid.
+					div.body-section
+						p In the boom years we set a Utah state record for most sales in a single day.  In 2011 and 2012 we were brought in to re-sell condo deals that had evaporated in the downturn.
+					div.body-section
+						div.timeline-block
+							div.timeline-date
+								h5.h5 2006 &mdash; 2007
+							div.timeline-info
+								ul
+									li Recruited and trained sales team, admin staff and 10 sales agents
+									li Devised national strategic marketing plan to generate qualified leads
+									li 2006 pre-sale launch generated $65M
+									li $100M first year sales
+						div.timeline-block
+							div.timeline-date
+								h5.h5 2008 &mdash; 2009
+							div.timeline-info
+								ul
+									li In 2008 real estate downturn the mortgage bank pulled condo financing and sales dropped out before lodge construction was complete
+									li Following a failed auction attempt, developer construction loan was past due
+									li Retained to kickstart an onsite sales effort
+									li We closed 43% of all condos sold at Canyon Resort
+						div.timeline-block
+							div.timeline-date
+								h5.h5 2010
+							div.timeline-info
+								ul
+									li Sales met and exceeded bank’s construction loan requirements
+									li Sold another 50 condos for 48% of all Canyons Resort unit sales
+									li Bank construction loan successfully repaid
+					div.body-section
+						h5.h5 Westgate Resort Backstory
+						h3.h3 Market-Based Sales and Marketing Strategies
+						ul
+							li Market-Based Sales and Marketing Strategies
+							li In boom years we maximized the opportunity by creating a single day reservation-based pre-sale launch with over 200 attending prospects
+							li.list-style-none
+								ul
+									li Ran a national campaign
+							li After the downturn, we sold finished product with a once-in-a-generation opportunity to take advantage of low ski/in-ski/out pricing
+							li.list-style-none
+								ul
+									li Utilized low cost local advertising and developed cooperative broker relationships
 		div.clearfix
 
 	div.outer.testimonial
@@ -42,19 +69,4 @@ block content
 					h5.h5 (407) 351-3350 x101
 		div.clearfix
 
-	div.outer.contact
-		div.inner
-			div.content
-				h1.h1 Let's get to work
-				div.contact-fields
-					label.h5 Name
-					input(type="text" placeholder="First Last")
-					label.h5 Email
-					input(type="text" placeholder="you@email.com")
-					label.h5 Phone
-					input(type="text" placeholder="123-456-7890")
-					label.h5 Message
-					textarea(placeholder="How can we help?")
-				div.contact-submit
-					input(type="submit" value="Send")
-		div.clearfix
+	include _include-contact-form.pug

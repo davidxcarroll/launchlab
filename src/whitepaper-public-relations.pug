@@ -13,24 +13,22 @@ block content
 				div.article-photo
 					img(src="img/whitepaper/whitepaper-public-relations.jpg")
 				div.article-body
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum.
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.
-					p Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus.
+					div.body-section
+						p Our proprietary blend of PR programs virally attracts customers. We develop web partnerships with highly curated lists of buyers. This provides leads, organically creates web traffic and builds third party credibility.
+					div.body-section
+						h3 What is PR?
+						p Public Relations: the practice of managing the spread of information between an individual or an organization and the public. Usually through TV, online magazines, blogs, podcasts, and radio.
+						p Your marketing plan should have a PR aspect to it. We’ve seen PR have an extremely effective role in bringing in leads and buyers.
+					div.body-section
+						h3 Why is that?
+						p Every team is going to say their property is great, awesome, amazing and give a buyer a list of reasons why they should buy there. And they should. However, when a magazine, an influential blog, a podcaster, or a TV station says the same thing it holds more weight. PR is an easy way to build social proof for your property in the minds of buyers.
+					div.body-section
+						h3 So Launch Lab does press releases?
+						p We’ll do releases but usually only on big announcements.  Our friend Ben Parr, former editor of Mashable told us this:
+					div.body-section
+						h3 "Yes, there’s a lot more effort involved in customizing news pitches for each journalists but the results are night and day different.  Just as you don’t like and won’t click on irrelevant ads, journalists won’t open a pitch that isn’t relevant to their writing beat."
+					div.body-section
+						p See the difference?
 		div.clearfix
 
-	div.outer.contact
-		div.inner
-			div.content
-				h1.h1 Let's get to work
-				div.contact-fields
-					label.h5 Name
-					input(type="text" placeholder="First Last")
-					label.h5 Email
-					input(type="text" placeholder="you@email.com")
-					label.h5 Phone
-					input(type="text" placeholder="123-456-7890")
-					label.h5 Message
-					textarea(placeholder="How can we help?")
-				div.contact-submit
-					input(type="submit" value="Send")
-		div.clearfix
+	include _include-contact-form.pug

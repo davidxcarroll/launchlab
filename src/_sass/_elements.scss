@@ -115,6 +115,7 @@
 }
 
 .project-list-map {
+	@extend .margin-big-bottom;
 	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
 	background-size: 20em;
 	.inner {
@@ -159,7 +160,7 @@
 }
 
 .testimonial {
-	@extend .margin-big-top;
+	// @extend .margin-big-top;
 	@extend .margin-big-bottom;
 	.inner {
 		.content {
@@ -264,49 +265,13 @@
 	.inner {
 		@extend .margin-big-bottom;
 		.content {
-			.article-photo {
-				// margin-bottom: 3em;
-			}
+			.article-photo {}
 			.article-body {
 				.h3 {
 					margin-bottom: .3em;
 				}
-				&> .h3 {
-					margin-top: 1em;
-				}
 				p {
 					margin-top: 1em;
-				}
-				ol {
-					margin-top: 3em;
-					counter-reset: ol-counter;
-					li {
-						position: relative;
-						margin-left: 2em;
-						margin-bottom: 2em;
-						&:before {
-							content: counter(ol-counter, decimal-leading-zero);
-							counter-increment: ol-counter;
-							position: absolute;
-							top: -.05em;
-							left: -1.6em;
-							@extend .h3;
-							font-family: $font-secondary;
-							text-align: right;
-							opacity: .2;
-						}
-						p {
-							margin-left: 1.5em;
-							position: relative;
-							&:before {
-								content: "• ";
-								position: absolute;
-								font-size: 2rem;
-								top: -.34em;
-								left: -.7em;
-							}
-						}
-					}
 				}
 			}
 		}
@@ -319,27 +284,15 @@
 	text-align: center;
 }
 
-// .page-title-small {
-// 	@extend .margin-top;
-// 	@extend .margin-bottom;
-// 	.h5 {
-// 		text-align: center;
-// 	}
-// }
-
 .project {
-	// @include media(min-width $tablet) {
-	// 	position: relative;
-	// 	z-index: -1;
-	// 	top: -3.5em;
-	// }
 	.inner {
 		.project-photo-block {
 			background-image: url("../img/photo-resort.jpg");
 			background-size: cover;
 		}
 		.project-content {
-			@extend .margin-big-top;
+			@extend .margin-top;
+			@extend .margin-big-bottom;
 			.project-title {
 				@extend .margin-big-bottom;
 				.h5 {
@@ -347,6 +300,12 @@
 				}
 			}
 			.project-body {
+				ul {
+					li {
+						margin-top: 0;
+						margin-bottom: .8em;
+					}
+				}
 				.timeline-block {
 					@include outer-container;
 					@extend .margin-big-bottom;
@@ -358,7 +317,11 @@
 							margin: 0 0 1em;
 						}
 					}
-					.timeline-info {}
+					.timeline-info {
+						ul {
+							margin-top: 0;
+						}
+					}
 				}
 			}
 		}

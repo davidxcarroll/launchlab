@@ -114,3 +114,70 @@ h3 { @extend .h3; }
 h4 { @extend .h4; }
 h5 { @extend .h5; }
 h6 { @extend .h6; }
+
+.body-section {
+  ol, ul {
+    li {
+      margin-top: .8em;
+      position: relative;
+      &:before {
+        position: absolute;
+      }
+      p {
+        margin-left: 1.5em;
+        position: relative;
+        &:before {
+          content: "•";
+          position: absolute;
+          font-size: 2rem;
+          top: -.34em;
+          left: -.7em;
+        }
+      }
+    }
+  }
+  margin-top: 3em;
+  ul {
+    margin-top: 1em;
+    li {
+      margin-left: 1.5em;
+      position: relative;
+      &:before {
+        content: "•";
+        position: absolute;
+        font-size: 2rem;
+        top: -.34em;
+        left: -.7em;
+      }
+      ul li {
+        margin-left: 2em;
+        &:before {
+          content: "—";
+          left: -1em;
+          opacity: .2;
+        }
+      }
+    }
+    li.list-style-none {
+      &:before {
+        content: "";
+      }
+    }
+  }
+  ol {
+    counter-reset: ol-counter;
+    li {
+      margin-left: 2em;
+      margin-bottom: 2em;
+      &:before {
+        content: counter(ol-counter, decimal-leading-zero);
+        counter-increment: ol-counter;
+        top: -.05em;
+        left: -1.6em;
+        @extend .h3;
+        font-family: $font-secondary;
+        opacity: .2;
+      }
+    }
+  }
+}

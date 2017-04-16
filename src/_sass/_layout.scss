@@ -40,7 +40,7 @@
 			}
 			.timeline-date {
 				@include media(min-width $tablet) {
-					@include span-columns(3);
+					@include span-columns(2);
 				}
 				@include media(max-width $tablet) {
 					@include span-columns(12);
@@ -48,7 +48,7 @@
 			}
 			.timeline-info {
 				@include media(min-width $tablet) {
-					@include span-columns(7);
+					@include span-columns(8);
 					@include shift(1);
 					@include omega;
 				}

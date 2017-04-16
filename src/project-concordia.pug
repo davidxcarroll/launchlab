@@ -1,0 +1,21 @@
+extends _base.pug
+
+block content
+
+	div.nav-default.nav-projects.nav-project
+		include _include-header.pug
+
+	div.outer.project
+		div.inner
+			div.project-photo
+				img(src="img/project/project-concordia.jpg")
+			div.project-content
+				div.project-title
+					h1.h1 Title
+					h5.h5 Concordiaa
+				div.project-body
+					div.body-section
+						p body
+		div.clearfix
+	
+	include _include-contact-form.pug

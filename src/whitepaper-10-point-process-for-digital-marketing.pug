@@ -13,53 +13,39 @@ block content
 				div.article-photo
 					img(src="img/whitepaper/whitepaper-10-point-process-for-digital-marketing.jpg")
 				div.article-body
-					ol
-						li
-							h3.h3 Identify Target Market
-							p Define demographic and psychographic parameters and apply to online filters
-						li
-							h3.h3 Identify Where They Hang Out on the Web
-						li
-							h3.h3 Develop Messaging
-							p Communicate brand pillars and project differentiators
-						li
-							h3.h3 Develop Imagery
-							p Graphic fit and finish, photos and video content
-						li
-							h3.h3 Create Website and Landing Pages
-							p Designed with appropriate messages and images
-							p Easy access for visitors using PCs, tablets or mobile devices
-						li
-							h3.h3 Create Online Ads
-						li
-							h3.h3 A/B Test and Optimize Ads and Landing Pages
-							p Low clicks – tweak ads
-							p Low conversions – tweak landing pages
-						li
-							h3.h3 Start Nurturing Funnel for Incoming Leads
-							p Develop custom email campaign to further qualify leads. Response requires additional lead form engagement by prospect, collecting email, phone etc.  Only these leads proceed in the funnel.  (If prospect fills out multiple lead forms they are considered the hottest of the hot leads.)
-							p Train telephone specialists to further qualify leads and set sales appointments 
-							p Depending on scale, expect 50-100+ qualified, hot leads per week
-						li
-							h3.h3 Start Retargeting Sequence
-							p The high majority of leads do not pass through our lead funnel process.  These leads are nurtured through a custom digital sequence
-						li
-							h3.h3 Repeat
+					div.body-section
+						ol
+							li
+								h3 Identify Target Market
+								p Define demographic and psychographic parameters and apply to online filters
+							li
+								h3 Identify Where They Hang Out on the Web
+							li
+								h3 Develop Messaging
+								p Communicate brand pillars and project differentiators
+							li
+								h3 Develop Imagery
+								p Graphic fit and finish, photos and video content
+							li
+								h3 Create Website and Landing Pages
+								p Designed with appropriate messages and images
+								p Easy access for visitors using PCs, tablets or mobile devices
+							li
+								h3 Create Online Ads
+							li
+								h3 A/B Test and Optimize Ads and Landing Pages
+								p Low clicks – tweak ads
+								p Low conversions – tweak landing pages
+							li
+								h3 Start Nurturing Funnel for Incoming Leads
+								p Develop custom email campaign to further qualify leads. Response requires additional lead form engagement by prospect, collecting email, phone etc. Only these leads proceed in the funnel. (If prospect fills out multiple lead forms they are considered the hottest of the hot leads.)
+								p Train telephone specialists to further qualify leads and set sales appointments 
+								p Depending on scale, expect 50-100+ qualified, hot leads per week
+							li
+								h3 Start Retargeting Sequence
+								p The high majority of leads do not pass through our lead funnel process. These leads are nurtured through a custom digital sequence
+							li
+								h3 Repeat
 		div.clearfix
 
-	div.outer.contact
-		div.inner
-			div.content
-				h1.h1 Let's get to work
-				div.contact-fields
-					label.h5 Name
-					input(type="text" placeholder="First Last")
-					label.h5 Email
-					input(type="text" placeholder="you@email.com")
-					label.h5 Phone
-					input(type="text" placeholder="123-456-7890")
-					label.h5 Message
-					textarea(placeholder="How can we help?")
-				div.contact-submit
-					input(type="submit" value="Send")
-		div.clearfix
+	include _include-contact-form.pug

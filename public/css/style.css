@@ -539,7 +539,7 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.margin-top, .project-featured .project-info, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
+.margin-top, .project-featured .project-info, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .project .inner .project-content, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
   margin-top: 1em; }
 
 .margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
@@ -551,10 +551,10 @@ picture {
 .margin-right {
   margin-right: 1em; }
 
-.margin-big-top, .project-list-map .project-list, .primary-message .inner, .project-list-map .map, .testimonial, .page-title, .project .inner .project-content, .project .inner .project-sidebar {
+.margin-big-top, .project-list-map .project-list, .primary-message .inner, .project-list-map .map, .page-title, .project .inner .project-sidebar {
   margin-top: 3.75em; }
 
-.margin-big-bottom, .project-list-map .project-list, .primary-message-buckets .inner, .project-featured .project-info, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
+.margin-big-bottom, .project-list-map .project-list, .primary-message-buckets .inner, .project-featured .project-info, .project-list-map, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
   margin-bottom: 3.75em; }
 
 .margin-big-left {
@@ -667,7 +667,7 @@ a {
 strong {
   font-weight: bolder; }
 
-.button, .cta, .cta-square, .nav ul li, .h1, h1, .h3, h3, .article .inner .content .article-body ol li:before, .h4, h4, .h6, h6 {
+.button, .cta, .cta-square, .nav ul li, .h1, h1, .h3, h3, .body-section ol li:before, .h4, h4, .h6, h6 {
   font-family: "Heebo", sans-serif;
   font-weight: 700; }
 
@@ -681,7 +681,7 @@ strong {
 .h1, h1 {
   line-height: 1em; }
 
-.h3, h3, .article .inner .content .article-body ol li:before {
+.h3, h3, .body-section ol li:before {
   line-height: 1.2em; }
 
 .h7, .footer .inner .footer-column, .h8 {
@@ -702,7 +702,7 @@ strong {
 @media screen and (min-width: 600px) {
   .h2, h2 {
     font-size: 2.25em; }
-  .h3, h3, .article .inner .content .article-body ol li:before {
+  .h3, h3, .body-section ol li:before {
     font-size: 1.875em; }
   .h4, h4 {
     font-size: 1.5em; }
@@ -730,7 +730,7 @@ strong {
     font-size: 1.875em; }
   .h2, h2 {
     font-size: 1.35em; }
-  .h3, h3, .article .inner .content .article-body ol li:before {
+  .h3, h3, .body-section ol li:before {
     font-size: 1.125em; }
   .h4, h4 {
     font-size: 0.9em; }
@@ -747,6 +747,54 @@ strong {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
+
+.body-section {
+  margin-top: 3em; }
+  .body-section ol li, .body-section ul li {
+    margin-top: .8em;
+    position: relative; }
+    .body-section ol li:before, .body-section ul li:before {
+      position: absolute; }
+    .body-section ol li p, .body-section ul li p {
+      margin-left: 1.5em;
+      position: relative; }
+      .body-section ol li p:before, .body-section ul li p:before {
+        content: "•";
+        position: absolute;
+        font-size: 2rem;
+        top: -.34em;
+        left: -.7em; }
+  .body-section ul {
+    margin-top: 1em; }
+    .body-section ul li {
+      margin-left: 1.5em;
+      position: relative; }
+      .body-section ul li:before {
+        content: "•";
+        position: absolute;
+        font-size: 2rem;
+        top: -.34em;
+        left: -.7em; }
+      .body-section ul li ul li {
+        margin-left: 2em; }
+        .body-section ul li ul li:before {
+          content: "—";
+          left: -1em;
+          opacity: .2; }
+    .body-section ul li.list-style-none:before {
+      content: ""; }
+  .body-section ol {
+    counter-reset: ol-counter; }
+    .body-section ol li {
+      margin-left: 2em;
+      margin-bottom: 2em; }
+      .body-section ol li:before {
+        content: counter(ol-counter, decimal-leading-zero);
+        counter-increment: ol-counter;
+        top: -.05em;
+        left: -1.6em;
+        font-family: "Oswald", sans-serif;
+        opacity: .2; }
 
 input[type="text"],
 textarea,
@@ -844,7 +892,7 @@ input[type="submit"] {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%; }
+    width: 14.70196%; }
     .project .inner .project-content .timeline-date:last-child {
       margin-right: 0; } }
 
@@ -862,7 +910,7 @@ input[type="submit"] {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%;
+    width: 65.88078%;
     margin-left: 8.5298%;
     margin-right: 0; }
     .project .inner .project-content .timeline-info:last-child {
@@ -1589,40 +1637,11 @@ input[type="submit"] {
   .featured-article .inner .content .article-summary {
     margin-top: 2em; } }
 
-.article .inner .content .article-body .h3, .article .inner .content .article-body h3, .article .inner .content .article-body ol li:before {
+.article .inner .content .article-body .h3, .article .inner .content .article-body h3, .article .inner .content .article-body .body-section ol li:before, .body-section ol .article .inner .content .article-body li:before {
   margin-bottom: .3em; }
-
-.article .inner .content .article-body > .h3, .article .inner .content .article-body > h3, .article .inner .content .article-body ol .article-body > li:before {
-  margin-top: 1em; }
 
 .article .inner .content .article-body p {
   margin-top: 1em; }
-
-.article .inner .content .article-body ol {
-  margin-top: 3em;
-  counter-reset: ol-counter; }
-  .article .inner .content .article-body ol li {
-    position: relative;
-    margin-left: 2em;
-    margin-bottom: 2em; }
-    .article .inner .content .article-body ol li:before {
-      content: counter(ol-counter, decimal-leading-zero);
-      counter-increment: ol-counter;
-      position: absolute;
-      top: -.05em;
-      left: -1.6em;
-      font-family: "Oswald", sans-serif;
-      text-align: right;
-      opacity: .2; }
-    .article .inner .content .article-body ol li p {
-      margin-left: 1.5em;
-      position: relative; }
-      .article .inner .content .article-body ol li p:before {
-        content: "• ";
-        position: absolute;
-        font-size: 2rem;
-        top: -.34em;
-        left: -.7em; }
 
 .page-title {
   text-align: center; }
@@ -1630,6 +1649,10 @@ input[type="submit"] {
 .project .inner .project-photo-block {
   background-image: url("../img/photo-resort.jpg");
   background-size: cover; }
+
+.project .inner .project-content .project-body ul li {
+  margin-top: 0;
+  margin-bottom: .8em; }
 
 .project .inner .project-content .project-body .timeline-block {
   max-width: 68em;
@@ -1645,6 +1668,8 @@ input[type="submit"] {
   @media screen and (max-width: 770px) {
     .project .inner .project-content .project-body .timeline-block .timeline-date {
       margin: 0 0 1em; } }
+  .project .inner .project-content .project-body .timeline-block .timeline-info ul {
+    margin-top: 0; }
 
 .project .inner .project-sidebar .stats .stat {
   background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png"); }
