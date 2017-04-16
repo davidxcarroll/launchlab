@@ -1,5 +1,5 @@
 .hero-home {
-	background-image: url("../img/photo-resort.jpg");
+	background-image: url("../img/project/project-roco-ki.jpg");
 	background-size: cover;
 }
 
@@ -65,9 +65,11 @@
 }
 
 .project-featured {
-	.project-photo {
-		background-image: url("../img/photo-resort.jpg");
-		background-size: cover;
+	.project-photo-block {
+		position: relative;
+		overflow: hidden;
+		// background-image: url("../img/photo-resort.jpg");
+		// background-size: cover;
 		@include media(max-width $desktop min-width $tablet) {
 			height: 15em;
 		}
@@ -77,9 +79,13 @@
 		.stats {
 			.stat {
 				@include media(min-width $desktop) {
-					background-image: url("../img/bg-halftone-white-2@2x.png");
+					background-image: url("../img/texture/bg-halftone-white-2@2x.png");
 				}
 			}
+		}
+		.project-photo {
+			position: absolute;
+			z-index: -1;
 		}
 	}
 	.project-info {
@@ -87,7 +93,7 @@
 		@extend .margin-big-bottom;
 		.project-info-title {
 			.h5 {
-				@extend .margin-top;
+				@extend .margin-bottom;
 			}
 		}
 		.project-info-cta {
@@ -98,8 +104,18 @@
 	}
 }
 
+.project {
+	.project-photo {
+		@include media(min-width $tablet) {
+			position: relative;
+	    z-index: -1;
+	    top: -3.5em;
+    }
+	}
+}
+
 .project-list-map {
-	background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
 	background-size: 20em;
 	.inner {
 		h1 {
@@ -154,16 +170,16 @@
 					margin-right: 1em;
 					background-size: cover;
 					&.source-photo-mark_waltrip {
-						background-image: url("../img/client-mark_waltrip.jpg");
+						background-image: url("../img/client/client-mark_waltrip.jpg");
 					}
 					&.source-photo-richard_knorr {
-						background-image: url("../img/client-richard_knorr.jpg");
+						background-image: url("../img/client/client-richard_knorr.jpg");
 					}
 					&.source-photo-kemil_rizk {
-						background-image: url("../img/client-kemil_rizk.jpg");
+						background-image: url("../img/client/client-kemil_rizk.jpg");
 					}
 					&.source-photo-larry_hall {
-						background-image: url("../img/client-mark_waltrip.jpg");
+						background-image: url("../img/client/client-mark_waltrip.jpg");
 					}
 				}
 				.h5 {
@@ -225,9 +241,9 @@
 	.inner {
 		.content {
 			.article-photo {
-				height: 20em;
-				background-image: url("../img/photo-resort.jpg");
-				background-size: cover;
+				// height: 20em;
+				// background-image: url("../img/photo-resort.jpg");
+				// background-size: cover;
 			}
 			.article-summary {
 				.h5 {
@@ -252,14 +268,22 @@
 	}
 }
 
-.project {
-	@include media(min-width $tablet) {
-		position: relative;
-		z-index: -1;
-		top: -3.5em;
+.page-title-link {
+	@extend .margin-top;
+	@extend .margin-bottom;
+	.h5 {
+		text-align: center;
 	}
+}
+
+.project {
+	// @include media(min-width $tablet) {
+	// 	position: relative;
+	// 	z-index: -1;
+	// 	top: -3.5em;
+	// }
 	.inner {
-		.project-photo {
+		.project-photo-block {
 			background-image: url("../img/photo-resort.jpg");
 			background-size: cover;
 		}
@@ -291,7 +315,7 @@
 			@extend .margin-big-top;
 			.stats {
 				.stat {
-					background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+					background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
 				}
 			}
 		}
@@ -328,7 +352,7 @@
 .about-blurb {
 	@extend .padding-big-top;
 	@extend .padding-big-bottom;
-	background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
 	background-size: 22em;
 }
 

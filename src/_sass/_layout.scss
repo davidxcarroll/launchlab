@@ -21,7 +21,7 @@
 
 .project {
 	.inner {
-		.project-photo {
+		.project-photo-block {
 			@include media(min-width $tablet) {
 				height: 60%;
 			}
@@ -91,7 +91,7 @@
 }
 
 .project-featured {
-	.project-photo {
+	.project-photo-block {
 		@include media(min-width $desktop) {
 			@include span-columns(9);
 			@include shift(1.5);
@@ -241,33 +241,29 @@
 
 .featured-article {
 	.inner {
-		@include media(min-width $landscape) {
+		@include media(min-width $desktop) {
 			@include span-columns(8);
 			@include shift(2);
 		}
-		@include media(max-width $landscape) {
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		@include media(max-width $tablet) {
 			@include span-columns(10);
 			@include shift(1);
 		}
 		.content {
 			.article-photo {
-				@include media(min-width $landscape) {
-					@include span-columns(5);
-				}
-				@include media(max-width $landscape) {
-					@include span-columns(10);
-					@include shift(1);
+				@include media(min-width $tablet) {
+					@include span-columns(4.75);
 				}
 			}
 			.article-summary {
-				@include media(min-width $landscape) {
-					@include span-columns(6);
-					@include shift(1);
+				@include media(min-width $tablet) {
+					@include span-columns(7);
+					@include shift(.25);
 					@include omega;
-				}
-				@include media(max-width $landscape) {
-					@include span-columns(10);
-					@include shift(1);
 				}
 			}
 		}

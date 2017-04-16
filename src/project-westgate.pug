@@ -1,0 +1,64 @@
+extends _base.pug
+
+block content
+
+	div.nav-default.nav-projects.nav-project
+		include _include-header.pug
+
+	//- div.outer.page-title-link
+	//- 	a(href="projects.html")
+	//- 		h5.h5 &larr; Back to all projects
+
+	div.outer.project
+		div.inner
+			div.project-photo
+				img(src="img/project/project-westgate.jpg")
+			div.project-content
+				div.project-title
+					h1.h1 Sales Success In Two Economic Eras
+					h5.h5 Westgate Resort, Park City, Utah
+				div.project-body
+					div.timeline-block
+						div.timeline-date
+							h5.h5 2006 &mdash; 2007
+						div.timeline-info
+							h4.h4 Sold 141 luxury units at $750 per sq. ft. in two presale launches over 10 months. Original Launch Sales: nearly $100M.
+					div.timeline-block
+						div.timeline-date
+							h5.h5 2008 &mdash; 2009
+						div.timeline-info
+							h4.h4 Real estate crash causes launch buyers to lose financing. Bank threatens foreclosure.
+					div.timeline-block
+						div.timeline-date
+							h5.h5 2010
+						div.timeline-info
+							h4.h4 Launch Lab was retained in 2010 to sell and close $10M by February 2011 to satisfy bank requirements. Developer’s construction loan repaid.
+		div.clearfix
+
+	div.outer.testimonial
+		div.inner
+			div.quote.svg
+				include _svg-quote.pug
+			div.content
+				h1.h1 [Launch Lab] executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.
+				div.source
+					h5.h5 Mark Waltrip, COO Westgate Resorts
+					h5.h5 (407) 351-3350 x101
+		div.clearfix
+
+	div.outer.contact
+		div.inner
+			div.content
+				h1.h1 Let's get to work
+				div.contact-fields
+					label.h5 Name
+					input(type="text" placeholder="First Last")
+					label.h5 Email
+					input(type="text" placeholder="you@email.com")
+					label.h5 Phone
+					input(type="text" placeholder="123-456-7890")
+					label.h5 Message
+					textarea(placeholder="How can we help?")
+				div.contact-submit
+					input(type="submit" value="Send")
+		div.clearfix

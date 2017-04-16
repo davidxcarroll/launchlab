@@ -2,7 +2,7 @@
 
 .nav {
 	ul {
-		background-image: url(../img/bg-halftone-black-1-trans@2x.png);
+		background-image: url(../img/texture/bg-halftone-black-1-trans@2x.png);
 		background-size: 20em;
 		li {
 			@include media(min-width $tablet) {
@@ -36,7 +36,7 @@
 		color: $white;
 		@include media(min-width $landscape) {
 			@include pad(.8em 0);
-			font-size: 1.3125em;
+			font-size: 1.2em;
 			letter-spacing: 2;
 			line-height: 1em;
 		}
@@ -65,8 +65,12 @@
 
 .nav-default {
 	.nav-button-home {
-		@include media(min-width $tablet) {
+		@include media(min-width $desktop) {
 			@include size(9.375em auto);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(2);
+			height: auto;
 		}
 		@include media(max-width $tablet) {
 			@include size(11em auto);
@@ -79,7 +83,7 @@
 	.nav-logo {
 		display: block;
 		@include media(min-width $tablet) {
-			@include size(auto 3.6em);
+			@include size(auto 3em);
 			@include margin(0 auto .6em);
 		}
 		@include media(max-width $tablet) {
@@ -162,11 +166,12 @@
 	}
 }
 
-// BACKGROUND ADJUST FOR PROJECTS PAGE
+// BACKGROUND ADJUST FOR PROJECT PAGE
 
-.nav-home, .nav-projects {
+.nav-home, .nav-project
+{
 	.nav ul {
-		background-image: url(../img/bg-halftone-white-2@2x.png);
+		background-image: url(../img/texture/bg-halftone-white-2@2x.png);
 	}
 }
 
@@ -206,7 +211,7 @@
 		display: inline-block;
 		@include pad(1em);
 		cursor: pointer;
-		background-image: url(../img/bg-halftone-white-2@2x.png);
+		background-image: url(../img/texture/bg-halftone-white-2@2x.png);
 		background-size: 20em;
 		.nav-mobile-icon {
 			float: right;

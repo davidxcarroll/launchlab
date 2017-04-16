@@ -6,31 +6,54 @@ block content
 		include _include-header.pug
 
 	div.outer.page-title
-		h2.h2 Our 10-point process for digital marketing
+		h2.h2 Process &amp; insights
 
-	div.outer.featured-article
-		div.inner
-			div.content
-				div.article-photo
-				div.article-summary
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum.
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.
-					p Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et.
-		div.clearfix
+	mixin whitepaper(photo, title, summary, link)
+		div.outer.featured-article
+			div.inner
+				div.content
+					div.article-photo
+						img(src= photo)
+					div.article-summary
+						h1.h1= title
+						p= summary
+						a(href=link)
+							p.button Continue reading
+			div.clearfix
 
-	div.outer.contact
-		div.inner
-			div.content
-				h1.h1 Let's get to work
-				div.contact-fields
-					label.h5 Name
-					input(type="text" placeholder="First Last")
-					label.h5 Email
-					input(type="text" placeholder="you@email.com")
-					label.h5 Phone
-					input(type="text" placeholder="123-456-7890")
-					label.h5 Message
-					textarea(placeholder="How can we help?")
-				div.contact-submit
-					input(type="submit" value="Send")
-		div.clearfix
+	+whitepaper(
+	'img/whitepaper/whitepaper-10-point-process-for-digital-marketing.jpg',
+	'Our 10-point process for digital marketing',
+	'Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.',
+	'whitepaper-10-point-process-for-digital-marketing.html')
+
+	+whitepaper(
+	'img/whitepaper/whitepaper-defining-and-creating-a-brand.jpg',
+	'The nature of defining and creating a brand',
+	'Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.',
+	'whitepaper-defining-and-creating-a-brand.html')
+
+	+whitepaper(
+	'img/whitepaper/whitepaper-public-relations.jpg',
+	'Public relations',
+	'Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.',
+	'whitepaper-public-relations.html')
+
+	+whitepaper(
+	'img/whitepaper/whitepaper-find-buyers-with-online-advertising.jpg',
+	'Find buyers with online advertising',
+	'Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.',
+	'whitepaper-find-buyers-with-online-advertising.html')
+
+	+whitepaper(
+	'img/whitepaper/whitepaper-building-a-sales-machine.jpg',
+	'Building a sales machine',
+	'Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.',
+	'whitepaper-building-a-sales-machine.html')
+
+	+whitepaper(
+	'img/whitepaper/whitepaper-secret-sauce.jpg',
+	'The Launch Lab Secret Sauce at work',
+	'Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.',
+	'whitepaper-launch-lab-secret-sauce.html')
+

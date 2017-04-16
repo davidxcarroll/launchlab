@@ -538,10 +538,10 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.margin-top, .project-featured .project-info, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
+.margin-top, .project-featured .project-info, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .page-title-link, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
   margin-top: 1em; }
 
-.margin-bottom, .primary-message .inner, .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
+.margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .page-title-link, .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
   margin-bottom: 1em; }
 
 .margin-left {
@@ -645,10 +645,6 @@ body {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
   color: #000; }
-
-*,
-a {
-  transition: all .1s ease-in-out; }
 
 input,
 input[type="text"],
@@ -812,11 +808,11 @@ input[type="submit"] {
     width: 100%; } }
 
 @media screen and (min-width: 770px) {
-  .project .inner .project-photo {
+  .project .inner .project-photo-block {
     height: 60%; } }
 
 @media screen and (max-width: 770px) {
-  .project .inner .project-photo {
+  .project .inner .project-photo-block {
     height: 20em; } }
 
 @media screen and (min-width: 1140px) {
@@ -919,42 +915,42 @@ input[type="submit"] {
       margin-right: 0; } }
 
 @media screen and (min-width: 1140px) {
-  .project-featured .project-photo {
+  .project-featured .project-photo-block {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
     margin-left: 12.79471%; }
-    .project-featured .project-photo:last-child {
+    .project-featured .project-photo-block:last-child {
       margin-right: 0; } }
 
 @media screen and (max-width: 1140px) and (min-width: 770px) {
-  .project-featured .project-photo {
+  .project-featured .project-photo-block {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 17.05961%; }
-    .project-featured .project-photo:last-child {
+    .project-featured .project-photo-block:last-child {
       margin-right: 0; } }
 
 @media screen and (max-width: 770px) {
-  .project-featured .project-photo {
+  .project-featured .project-photo-block {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 8.5298%; }
-    .project-featured .project-photo:last-child {
+    .project-featured .project-photo-block:last-child {
       margin-right: 0; } }
 
-.project-featured .project-photo .stats {
+.project-featured .project-photo-block .stats {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-left: 76.76824%; }
-  .project-featured .project-photo .stats:last-child {
+  .project-featured .project-photo-block .stats:last-child {
     margin-right: 0; }
 
 @media screen and (min-width: 1140px) {
@@ -1194,7 +1190,7 @@ input[type="submit"] {
       .contact .inner .content .contact-submit input[type="submit"]:last-child {
         margin-right: 0; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1140px) {
   .featured-article .inner {
     float: left;
     display: block;
@@ -1204,7 +1200,7 @@ input[type="submit"] {
     .featured-article .inner:last-child {
       margin-right: 0; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1140px) and (min-width: 770px) {
   .featured-article .inner {
     float: left;
     display: block;
@@ -1214,43 +1210,33 @@ input[type="submit"] {
     .featured-article .inner:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 600px) {
-  .featured-article .inner .content .article-photo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%; }
-    .featured-article .inner .content .article-photo:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 600px) {
-  .featured-article .inner .content .article-photo {
+@media screen and (max-width: 770px) {
+  .featured-article .inner {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 8.5298%; }
+    .featured-article .inner:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .featured-article .inner .content .article-photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 38.15892%; }
     .featured-article .inner .content .article-photo:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 770px) {
   .featured-article .inner .content .article-summary {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 8.5298%;
+    width: 57.35098%;
+    margin-left: 2.13245%;
     margin-right: 0; }
-    .featured-article .inner .content .article-summary:last-child {
-      margin-right: 0; } }
-
-@media screen and (max-width: 600px) {
-  .featured-article .inner .content .article-summary {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%; }
     .featured-article .inner .content .article-summary:last-child {
       margin-right: 0; } }
 
@@ -1410,7 +1396,7 @@ input[type="submit"] {
       margin-right: 0; } }
 
 .hero-home {
-  background-image: url("../img/photo-resort.jpg");
+  background-image: url("../img/project/project-roco-ki.jpg");
   background-size: cover; }
 
 .primary-message .inner h1 {
@@ -1452,25 +1438,34 @@ input[type="submit"] {
   .stats .stat {
     display: none; } }
 
-.project-featured .project-photo {
-  background-image: url("../img/photo-resort.jpg");
-  background-size: cover; }
+.project-featured .project-photo-block {
+  position: relative;
+  overflow: hidden; }
   @media screen and (max-width: 1140px) and (min-width: 770px) {
-    .project-featured .project-photo {
+    .project-featured .project-photo-block {
       height: 15em; } }
   @media screen and (max-width: 770px) {
-    .project-featured .project-photo {
+    .project-featured .project-photo-block {
       height: 10em; } }
   @media screen and (min-width: 1140px) {
-    .project-featured .project-photo .stats .stat {
-      background-image: url("../img/bg-halftone-white-2@2x.png"); } }
+    .project-featured .project-photo-block .stats .stat {
+      background-image: url("../img/texture/bg-halftone-white-2@2x.png"); } }
+  .project-featured .project-photo-block .project-photo {
+    position: absolute;
+    z-index: -1; }
 
 @media screen and (max-width: 600px) {
   .project-featured .project-info .project-info-cta {
     margin: 2em 0 0; } }
 
+@media screen and (min-width: 770px) {
+  .project .project-photo {
+    position: relative;
+    z-index: -1;
+    top: -3.5em; } }
+
 .project-list-map {
-  background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
   background-size: 20em; }
   .project-list-map .inner h1 {
     text-align: center; }
@@ -1499,13 +1494,13 @@ input[type="submit"] {
   margin-right: 1em;
   background-size: cover; }
   .testimonial .inner .content .source .source-photo.source-photo-mark_waltrip {
-    background-image: url("../img/client-mark_waltrip.jpg"); }
+    background-image: url("../img/client/client-mark_waltrip.jpg"); }
   .testimonial .inner .content .source .source-photo.source-photo-richard_knorr {
-    background-image: url("../img/client-richard_knorr.jpg"); }
+    background-image: url("../img/client/client-richard_knorr.jpg"); }
   .testimonial .inner .content .source .source-photo.source-photo-kemil_rizk {
-    background-image: url("../img/client-kemil_rizk.jpg"); }
+    background-image: url("../img/client/client-kemil_rizk.jpg"); }
   .testimonial .inner .content .source .source-photo.source-photo-larry_hall {
-    background-image: url("../img/client-mark_waltrip.jpg"); }
+    background-image: url("../img/client/client-mark_waltrip.jpg"); }
 
 .testimonial .inner .quote {
   margin-bottom: 2em; }
@@ -1536,11 +1531,6 @@ input[type="submit"] {
       .contact .inner .content .contact-submit input[type="submit"] {
         margin: 2em 0 0; } }
 
-.featured-article .inner .content .article-photo {
-  height: 20em;
-  background-image: url("../img/photo-resort.jpg");
-  background-size: cover; }
-
 @media screen and (max-width: 770px) {
   .featured-article .inner .content .article-summary {
     margin-top: 2em; } }
@@ -1548,13 +1538,10 @@ input[type="submit"] {
 .page-title .h2, .page-title h2 {
   text-align: center; }
 
-@media screen and (min-width: 770px) {
-  .project {
-    position: relative;
-    z-index: -1;
-    top: -3.5em; } }
+.page-title-link .h5, .page-title-link h5, .page-title-link input[type="submit"] {
+  text-align: center; }
 
-.project .inner .project-photo {
+.project .inner .project-photo-block {
   background-image: url("../img/photo-resort.jpg");
   background-size: cover; }
 
@@ -1574,7 +1561,7 @@ input[type="submit"] {
       margin: 0 0 1em; } }
 
 .project .inner .project-sidebar .stats .stat {
-  background-image: url("../img/bg-halftone-black-1-trans@2x.png"); }
+  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png"); }
 
 @media screen and (min-width: 770px) {
   .team {
@@ -1589,7 +1576,7 @@ input[type="submit"] {
     margin-top: 1em; } }
 
 .about-blurb {
-  background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
   background-size: 22em; }
 
 .awards .page-title {
@@ -1612,7 +1599,7 @@ input[type="submit"] {
   background-color: rgba(0, 0, 0, 0.2); }
 
 .nav ul {
-  background-image: url(../img/bg-halftone-black-1-trans@2x.png);
+  background-image: url(../img/texture/bg-halftone-black-1-trans@2x.png);
   background-size: 20em; }
   .nav ul li {
     text-align: center; }
@@ -1649,7 +1636,7 @@ input[type="submit"] {
     @media screen and (min-width: 600px) {
       .nav-button-home a {
         padding: 0.8em 0;
-        font-size: 1.3125em;
+        font-size: 1.2em;
         letter-spacing: 2;
         line-height: 1em; } }
     @media screen and (max-width: 600px) {
@@ -1672,10 +1659,20 @@ input[type="submit"] {
 .nav-home .break {
   display: block; }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1140px) {
   .nav-default .nav-button-home {
     height: auto;
     width: 9.375em; } }
+
+@media screen and (max-width: 1140px) and (min-width: 770px) {
+  .nav-default .nav-button-home {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    height: auto; }
+    .nav-default .nav-button-home:last-child {
+      margin-right: 0; } }
 
 @media screen and (max-width: 770px) {
   .nav-default .nav-button-home {
@@ -1689,7 +1686,7 @@ input[type="submit"] {
   display: block; }
   @media screen and (min-width: 770px) {
     .nav-default .nav-logo {
-      height: 3.6em;
+      height: 3em;
       width: auto;
       margin: 0 auto 0.6em; } }
   @media screen and (max-width: 770px) {
@@ -1772,8 +1769,8 @@ input[type="submit"] {
   .nav-whitepapers .nav-item-whitepapers {
     background-color: #FFFFFF; } }
 
-.nav-home .nav ul, .nav-projects .nav ul {
-  background-image: url(../img/bg-halftone-white-2@2x.png); }
+.nav-home .nav ul, .nav-project .nav ul {
+  background-image: url(../img/texture/bg-halftone-white-2@2x.png); }
 
 @media screen and (min-width: 770px) {
   .nav .nav-button-contact {
@@ -1797,7 +1794,7 @@ input[type="submit"] {
     display: inline-block;
     padding: 1em;
     cursor: pointer;
-    background-image: url(../img/bg-halftone-white-2@2x.png);
+    background-image: url(../img/texture/bg-halftone-white-2@2x.png);
     background-size: 20em; }
     .nav-mobile p .nav-mobile-icon {
       float: right;
@@ -1807,7 +1804,7 @@ input[type="submit"] {
       margin: 0 0 0 0.6em; }
 
 .footer {
-  background-image: url("../img/bg-halftone-black-1-trans@2x.png");
+  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
   background-size: 20em; }
   .footer .inner {
     text-align: center; }

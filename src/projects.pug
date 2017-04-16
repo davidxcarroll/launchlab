@@ -5,64 +5,67 @@ block content
 	div.nav-default.nav-projects
 		include _include-header.pug
 
-	div.outer.project
-		div.inner
-			div.project-photo
-			div.project-content
-				div.project-title
-					h1.h1 Sales Success in Two Eras
-					h5.h5 The Canyons® Ski Resort, Park City, Utah
-					h5.h5 Ski-in / Ski-out Condominiums
-				div.project-body
-					div.timeline-block
-						div.timeline-date
-							h5.h5 2006 &mdash; 2007
-						div.timeline-info
-							h4.h4 Sold 141 luxury units at $750 per sq. ft. in two presale launches over 10 months. Original Launch Sales: nearly $100M.
-					div.timeline-block
-						div.timeline-date
-							h5.h5 2008 &mdash; 2009
-						div.timeline-info
-							h4.h4 Real estate crash causes launch buyers to lose financing. Bank threatens foreclosure.
-					div.timeline-block
-						div.timeline-date
-							h5.h5 2010
-						div.timeline-info
-							h4.h4 Launch Lab was retained in 2010 to sell and close $10M by February 2011 to satisfy bank requirements. Developer’s construction loan repaid.
-			//- div.project-sidebar
-			//- 	div.stats
-			//- 		div.stat
-			//- 			h2.h2 $100 M
-			//- 			p.h7 Original Launch Sales
-			//- 		div.stat
-			//- 			h2.h2 $10 M
-			//- 			p.h7 Donec Congue Lacinia
-		div.clearfix
+	div.outer.page-title
+		h2.h2 Featured projects
 
-	div.outer.testimonial
-		div.inner
-			div.quote.svg
-				include _svg-quote.pug
-			div.content
-				h1.h1 [Launch Lab] executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.
-				div.source
-					h5.h5 Mark Waltrip, COO Westgate Resorts
-					h5.h5 (407) 351-3350 x101
-		div.clearfix
-
-	div.outer.contact
-		div.inner
-			div.content
-				h1.h1 Let's get to work
-				div.contact-fields
-					label.h5 Name
-					input(type="text" placeholder="First Last")
-					label.h5 Email
-					input(type="text" placeholder="you@email.com")
-					label.h5 Phone
-					input(type="text" placeholder="123-456-7890")
-					label.h5 Message
-					textarea(placeholder="How can we help?")
-				div.contact-submit
-					input(type="submit" value="Send")
-		div.clearfix
+	mixin project(photo, stat1h2, stat1h7, stat2h2, stat2h7, resort, title, link)
+		div.outer.project-featured
+			.inner
+				div.project-photo-block
+					div.stats
+						div.stat
+							h2.h2= stat1h2
+							p.h7= stat1h7
+						div.stat
+							h2.h2= stat2h2
+							p.h7= stat2h7
+					div.project-photo
+						img(src=photo)
+				div.project-info
+					div.project-info-title
+						h5.h5= resort
+						h1.h1= title
+					div.project-info-cta.cta-square
+						a(href= link)
+							h5.h5 View case study
+							span.cta-arrow
+	
+	+project(
+	'img/project/project-westgate.jpg',
+	'$100M',
+	'Original Launch Sales',
+	'$65M',
+	'Pre-sale launch',
+	'Westgate Resort, Park City, Utah',
+	'Sales Success In Two Economic Eras',
+	'project-westgate.html')
+	
+	+project(
+	'img/project/project-concordia.jpg',
+	'$24M',
+	'Post market crash',
+	'3,000',
+	'Qualified leads',
+	'Concordia, Cape Coral, Florida',
+	'A Post Meltdown Success Story',
+	'project-concordia.html')
+	
+	+project(
+	'img/project/project-promonotory.jpg',
+	'$147M',
+	'Volume year two',
+	'$505K',
+	'Avg sales price',
+	'Promontory Club, Park City, Utah',
+	'Tripled Sales Two Years In a Row',
+	'project-promonotory.html')
+	
+	+project(
+	'img/project/project-roco-ki.jpg',
+	'$150M+',
+	'First year sales',
+	'$105M',
+	'In one day',
+	'Roco Ki, Dominican Republic',
+	'Single Day Caribbean Sales Record',
+	'project-roco-ki.html')
