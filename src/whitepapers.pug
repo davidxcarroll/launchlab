@@ -12,12 +12,12 @@ block content
 		div.outer.featured-article
 			div.inner
 				div.content
-					div.article-photo
-						img(src= photo)
-					div.article-summary
-						h1.h1= title
-						p= summary
-						a(href=link)
+					a(href=link)
+						div.article-photo
+							img(src= photo)
+						div.article-summary
+							h1.h1= title
+							p= summary
 							p.button Continue reading
 			div.clearfix
 

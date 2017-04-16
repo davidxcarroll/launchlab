@@ -270,6 +270,37 @@
 	}
 }
 
+.article {
+	.inner {
+		@include media(min-width $desktop) {
+			@include span-columns(6);
+			@include shift(3);
+		}
+		@include media(max-width $desktop min-width $landscape) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $landscape) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.content {
+			.article-photo {
+				@include media(min-width $tablet) {
+					@include span-columns(10);
+					@include shift(1);
+				}
+			}
+			.article-body {
+				@include media(min-width $tablet) {
+					@include span-columns(10);
+					@include shift(1);
+				}
+			}
+		}
+	}
+}
+
 .team {
 	.inner {
 		.team-member {
