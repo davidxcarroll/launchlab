@@ -34,7 +34,7 @@ input[type="submit"] {
 	@include size(100% auto);
 	@include pad(2.5em 1em);
 	text-align: center;
-	background-image: url("../img/bg-halftone-white-2@2x.png");
+	background-image: url("../img/texture/bg-halftone-white-2@2x.png");
 	background-size: 22em;
 	@extend .h5;
 	color: $black;
