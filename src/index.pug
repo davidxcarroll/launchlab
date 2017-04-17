@@ -48,50 +48,14 @@ block content
 					img(src="img/project/project-westgate.jpg")
 			div.project-info
 				div.project-info-title
-					h5.h5 Westgate Resort, Park City, Utah'
+					h5.h5 Westgate Resort, Park City, Utah
 					h1.h1 Sales Success In Two Economic Eras
 				div.project-info-cta.cta-square
 					a(href="project-westgate.html")
 						h5.h5 View case study
 						span.cta-arrow
 
-	div.outer.project-list-map
-		div.inner
-			h1.h1 We've been everywhere, man
-		div.map
-			div.svg
-				include _svg-map.pug
-		div.project-list
-
-			mixin project(resort, location)
-				li
-					h6.h6= resort
-					p.h8.black-trans= location
-
-			div.project-list-region
-				p.h7.black-trans United States of America
-				ul
-					+project('Cordillera', 'Vail Valley, Colorado')
-					+project('Grizzly Ranch', 'Lake Tahoe, California')
-					+project('Juniper Springs Lodge', 'Mammoth, California')
-					+project('Hyatt Escala Lodge', 'Park City, Utah')
-					+project('Promonotory', 'Park City, Utah')
-					+project('Westgate Park City Resort', 'Park City, Utah')
-					+project('Reunion Resort and Club', 'Orlando, Florida')
-					+project('Hammock Beach', 'Palm Coast, Florida')
-					+project('Spruce Peak', 'Stowe Mt. Resort, Vermont')
-
-			div.project-list-region
-				p.h7.black-trans Latin America &amp; The Caribbean
-				ul
-					+project('Four Seasons Villas', 'Punta Mita, Mexico')
-					+project('Grand Residences', 'Riviera Maya, Mexico')
-					+project('Monte del Barco', 'Guanacaste, Costa Rica')
-					+project('Roco Ki', 'Dominican Republic')
-					+project('Royal Resorts', 'Cancun, Mexico')
-					+project('Royal Haciendas', 'Playa del Carmen, Mexico')
-
-		div.clearfix
+	include _include-map.pug
 
 	div.outer.testimonial
 		div.inner
