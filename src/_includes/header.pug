@@ -2,9 +2,9 @@ div.nav-mobile
 	p.button Menu
 		span.nav-mobile-icon
 			span.nav-mobile-icon-menu.svg.show
-				include _svg-menu.pug
+				include ../_svg/menu.pug
 			span.nav-mobile-icon-close.svg.hide
-				include _svg-close.pug
+				include ../_svg/close.pug
 
 div.outer.nav
 	ul.inner
@@ -12,7 +12,7 @@ div.outer.nav
 			div.nav-button-home
 				a(href="index.html")
 					span.svg.nav-logo
-						include _svg-logo-mark.pug
+						include ../_svg/logo-mark.pug
 					span.break Launch 
 					span.break Lab
-		include _include-nav-basic
+		include nav-basic.pug

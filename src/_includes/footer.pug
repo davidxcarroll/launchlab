@@ -2,10 +2,10 @@ div.outer.footer
 	div.inner
 		div.footer-column.footer-logo
 			div.svg
-				include _svg-logo-mark-dark.pug
+				include ../_svg/logo-mark-dark.pug
 		div.footer-column.footer-nav
 			ul
-				include _include-nav-basic
+				include nav-basic.pug
 		div.footer-column.footer-social
 			ul
 				li
@@ -21,4 +21,4 @@ div.outer.footer
 	div.clearfix
 
 script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-include script.js
+include ../_js/script.js

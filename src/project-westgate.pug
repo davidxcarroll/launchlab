@@ -3,7 +3,7 @@ extends _base.pug
 block content
 
 	div.nav-default.nav-projects.nav-project
-		include _include-header.pug
+		include _includes/header.pug
 
 	div.outer.project
 		div.inner
@@ -58,18 +58,13 @@ block content
 									li Utilized low cost local advertising and developed cooperative broker relationships
 		div.clearfix
 
-	div.outer.testimonial
-		div.inner
-			div.quote.svg
-				include _svg-quote.pug
-			div.content
-				h1.h1 [Launch Lab] executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.
-				div.source
-					h5.h5 Mark Waltrip, COO Westgate Resorts
-					h5.h5 (407) 351-3350 x101
-		div.clearfix
+	+testimonial(
+	'Launch Lab executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.',
+	'img/client/client-mark_waltrip.jpg',
+	'Mark Waltrip',
+	'COO Westgate Resorts')
 
-	include _include-contact-form.pug
+	include _includes/contact-form.pug
 
-	include _include-map.pug
+	include _includes/map.pug
 

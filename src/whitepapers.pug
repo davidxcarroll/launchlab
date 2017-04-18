@@ -3,23 +3,10 @@ extends _base.pug
 block content
 
 	div.nav-default.nav-whitepapers
-		include _include-header.pug
+		include _includes/header.pug
 
 	div.outer.page-title
 		h2.h2 Process &amp; insights
-
-	mixin whitepaper(photo, title, summary, link)
-		div.outer.featured-article
-			div.inner
-				div.content
-					a(href=link)
-						div.article-photo
-							img(src= photo)
-						div.article-summary
-							h1.h1= title
-							p= summary
-							p.button Continue reading
-			div.clearfix
 
 	+whitepaper(
 	'img/whitepaper/whitepaper-10-point-process-for-digital-marketing.jpg',

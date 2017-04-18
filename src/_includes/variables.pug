@@ -1,0 +1,53 @@
+
+- var pageTitle = "Launch Lab"
+
+//- MIXINS
+
+mixin project(photo, stat1h2, stat1h7, stat2h2, stat2h7, resort, title, link)
+	div.outer.project-featured
+		.inner
+			div.project-photo-block
+				div.stats
+					div.stat
+						h2.h2= stat1h2
+						p.h7= stat1h7
+					div.stat
+						h2.h2= stat2h2
+						p.h7= stat2h7
+				div.project-photo
+					img(src=photo)
+			div.project-info
+				div.project-info-title
+					h5.h5= resort
+					h1.h1= title
+				div.project-info-cta.cta-square
+					a(href= link)
+						h5.h5 View case study
+						span.cta-arrow
+
+mixin testimonial(quote, photo, author, title)
+	div.outer.testimonial
+			div.inner
+				div.quote.svg
+					include ../_svg/quote.pug
+				div.content
+					h3.h3= quote
+					div.source
+						div.source-photo
+							img(src=photo)
+						h5.h5= author
+						h5.h5= title
+			div.clearfix
+
+mixin whitepaper(photo, title, summary, link)
+	div.outer.featured-article
+		div.inner
+			div.content
+				a(href=link)
+					div.article-photo
+						img(src= photo)
+					div.article-summary
+						h1.h1= title
+						p= summary
+						p.button Continue reading
+		div.clearfix

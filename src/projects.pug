@@ -3,32 +3,10 @@ extends _base.pug
 block content
 
 	div.nav-default.nav-projects
-		include _include-header.pug
+		include _includes/header.pug
 
 	div.outer.page-title
 		h2.h2 Featured projects
-
-	mixin project(photo, stat1h2, stat1h7, stat2h2, stat2h7, resort, title, link)
-		div.outer.project-featured
-			.inner
-				div.project-photo-block
-					div.stats
-						div.stat
-							h2.h2= stat1h2
-							p.h7= stat1h7
-						div.stat
-							h2.h2= stat2h2
-							p.h7= stat2h7
-					div.project-photo
-						img(src=photo)
-				div.project-info
-					div.project-info-title
-						h5.h5= resort
-						h1.h1= title
-					div.project-info-cta.cta-square
-						a(href= link)
-							h5.h5 View case study
-							span.cta-arrow
 	
 	+project(
 	'img/project/project-westgate.jpg',

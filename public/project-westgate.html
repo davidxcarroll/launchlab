@@ -107,9 +107,9 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <div class="outer testimonial">
-    <div class="inner">
-      <div class="quote svg"><?xml version="1.0" encoding="UTF-8"?>
+    <div class="outer testimonial">
+      <div class="inner">
+        <div class="quote svg"><?xml version="1.0" encoding="UTF-8"?>
 <svg width="35px" height="28px" viewBox="0 0 35 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
 <title>“</title>
@@ -128,17 +128,18 @@
 </g>
 </g>
 </svg>
-      </div>
-      <div class="content">
-        <h1 class="h1">[Launch Lab] executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.</h1>
-        <div class="source">
-          <h5 class="h5">Mark Waltrip, COO Westgate Resorts</h5>
-          <h5 class="h5">(407) 351-3350 x101</h5>
+        </div>
+        <div class="content">
+          <h3 class="h3">Launch Lab executed a sales and marketing process for us that exceeded our expectations, generating $100M for us in one year. Just as important, they are true professionals that conduct their business with the utmost level of effort and integrity.</h3>
+          <div class="source">
+            <div class="source-photo"><img src="img/client/client-mark_waltrip.jpg"/></div>
+            <h5 class="h5">Mark Waltrip</h5>
+            <h5 class="h5">COO Westgate Resorts</h5>
+          </div>
         </div>
       </div>
+      <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
-  </div>
   <div class="outer contact">
     <div class="inner">
       <div class="content">
@@ -488,19 +489,16 @@
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script type="text/javascript">
 
-	$(document).ready(function(){
-	  $(".nav-mobile .button").click(function(){
-	    $(".nav .nav-item").toggle();
-	    $(".nav-mobile-icon-menu").toggle();
-	    $(".nav-mobile-icon-close").toggle();
-	    $(".nav-logo").toggle();
-	    // $(".nav-button-home").toggle();
-	    if($('.nav .inner li div').hasClass('nav-button-home')){
-		  	$('.nav .inner li div').removeClass('nav-button-home')
-			} else if ($('.nav .inner li div').addClass('nav-button-home'))
-	    console.log("menu");
-	  });
-	});
+  $(".nav-mobile .button").click(function(){
+    $(".nav .nav-item").toggle();
+    $(".nav-mobile-icon-menu").toggle();
+    $(".nav-mobile-icon-close").toggle();
+    $(".nav-logo").toggle();
+    if($('.nav .inner li div').hasClass('nav-button-home')){
+	  	$('.nav .inner li div').removeClass('nav-button-home')
+		} else if ($('.nav .inner li div').addClass('nav-button-home'))
+    console.log("menu");
+  });
 
 </script>
 </html>

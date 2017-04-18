@@ -3,7 +3,7 @@ extends _base.pug
 block content
 
 	div.nav-default.nav-about
-		include _include-header.pug
+		include _includes/header.pug
 
 	div.outer.page-title
 		h2.h2 The key players
@@ -48,7 +48,7 @@ block content
 			ul
 				li.award
 					div.award-logo
-						include _svg-award-nahb.pug
+						include _svg/award-nahb.pug
 					div.award-info
 						h5 National Association of Homebuilders
 
@@ -70,7 +70,7 @@ block content
 							+award('Silver Black and White Print Ad Award','The Penthouses at Hammock Beach')
 				li.award
 					div.award-logo
-						include _svg-award-arda.pug
+						include _svg/award-arda.pug
 					div.award-info
 						h5 American Resort Development Association
 						ul
@@ -80,7 +80,7 @@ block content
 							+award('Best Integrated Marketing Campaign','The Club at Spanish Peaks')
 				li.award
 					div.award-logo
-						include _svg-award-sia.pug
+						include _svg/award-sia.pug
 					div.award-info
 						h5 Summit International Awards
 						ul

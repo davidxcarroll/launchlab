@@ -29,7 +29,11 @@ gulp.task('sass', function() {
 var pug = require('gulp-pug');
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src(['./src/**/!(_)*.pug', '!.src/{_includes,_includes/**}'])
+  return gulp.src([
+      './src/**/!(_)*.pug',
+      '!./src/{_includes,_includes/**}',
+      '!./src/{_svg,_svg/**}'
+    ])
   .pipe(pug({
     pretty: true
   }))
