@@ -542,7 +542,7 @@ picture {
 .margin-top, .project-featured .project-info, .project-list-map .map-see-all-projects, .featured-article .inner .content .article-summary p, .page-title .h4, .page-title h4, .project .inner .project-content, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
   margin-top: 1em; }
 
-.margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .project-list-full .project-list .project-list-region .h7, .project-list-full .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-full .project-list .project-list-region .footer-column, .project-list-full .project-list .project-list-region ul li, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
+.margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .project-list-full .project-list .project-list-region .h7, .project-list-full .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-full .project-list .project-list-region .footer-column, .project-list-full .project-list .project-list-region ul li, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h3, .team .inner .team-member li .team-member-info h3, .team .inner .team-member li .team-member-info .body-section ol li:before, .body-section ol .team .inner .team-member li .team-member-info li:before, .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
   margin-bottom: 1em; }
 
 .margin-left {
@@ -554,7 +554,7 @@ picture {
 .margin-big-top, .primary-message .inner, .project-list-map .map, .project-list-map .project-list, .project-list-full .project-list, .testimonial .inner .content .source, .testimonial .inner .content .testimonial-cta, .page-title, .project .inner .project-sidebar {
   margin-top: 3.75em; }
 
-.margin-big-bottom, .project-list-full, .primary-message-buckets .inner, .project-featured, .project-featured .project-info, .project-list-map, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
+.margin-big-bottom, .project-list-full, .primary-message-buckets .inner, .project-featured, .project-featured .project-info, .project-list-map, .project-list-map .map, .project-list-map .map-see-all-projects, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
   margin-bottom: 3.75em; }
 
 .margin-big-left {
@@ -733,17 +733,17 @@ strong {
   .h3, h3, .body-section ol li:before {
     font-size: 1.125em; }
   .h4, h4 {
-    font-size: 0.9em; }
-  .h5, h5, input[type="submit"] {
     font-size: 1em; }
+  .h5, h5, input[type="submit"] {
+    font-size: 1.2em; }
   .h6, h6 {
-    font-size: 0.875em; }
+    font-size: 1em; }
   .h7, .footer .inner .footer-column {
-    font-size: 0.875em; }
+    font-size: 0.8em; }
   .h8 {
-    font-size: 0.5em; }
+    font-size: 0.8em; }
   .button, .cta, .cta-square, .nav ul li {
-    font-size: 0.8em; } }
+    font-size: 1em; } }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
@@ -1244,6 +1244,43 @@ input[type="submit"] {
     .testimonial .inner .content .source:last-child {
       margin-right: 0; } }
 
+@media screen and (max-width: 1140px) and (min-width: 770px) {
+  .testimonial .inner .content .source {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .testimonial .inner .content .source:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .testimonial .inner .content .source {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .testimonial .inner .content .source:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .testimonial .inner .content .source .source-photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .testimonial .inner .content .source .source-photo:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .testimonial .inner .content .source .source-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    margin-right: 0; }
+    .testimonial .inner .content .source .source-info:last-child {
+      margin-right: 0; } }
+
 @media screen and (min-width: 1140px) {
   .testimonial .inner .content .testimonial-cta {
     float: left;
@@ -1251,6 +1288,25 @@ input[type="submit"] {
     margin-right: 2.35765%;
     width: 31.76157%;
     margin-right: 0; }
+    .testimonial .inner .content .testimonial-cta:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 1140px) and (min-width: 770px) {
+  .testimonial .inner .content .testimonial-cta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0; }
+    .testimonial .inner .content .testimonial-cta:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .testimonial .inner .content .testimonial-cta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
     .testimonial .inner .content .testimonial-cta:last-child {
       margin-right: 0; } }
 
@@ -1579,7 +1635,7 @@ input[type="submit"] {
       margin-right: 0; } }
 
 .hero-home {
-  background-image: url("../img/project/project-roco-ki.jpg");
+  background-image: url("../img/project/project-roco-ki-golf.jpg");
   background-size: cover; }
 
 .primary-message .inner h1 {
@@ -1626,8 +1682,14 @@ input[type="submit"] {
   overflow: hidden; }
   @media screen and (max-width: 1140px) and (min-width: 770px) {
     .project-featured .project-photo-block {
+      height: 17em; } }
+  @media screen and (max-width: 770px) and (min-width: 600px) {
+    .project-featured .project-photo-block {
       height: 15em; } }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 600px) and (min-width: 420px) {
+    .project-featured .project-photo-block {
+      height: 12em; } }
+  @media screen and (max-width: 420px) {
     .project-featured .project-photo-block {
       height: 10em; } }
   @media screen and (min-width: 1140px) {
@@ -1646,6 +1708,9 @@ input[type="submit"] {
     position: relative;
     z-index: -1;
     top: -3.5em; } }
+
+.project .project-body .body-section .h5, .project .project-body .body-section h5, .project .project-body .body-section input[type="submit"] {
+  margin-bottom: 1em; }
 
 .project-list-map {
   background-image: url("../img/texture/bg-map.jpg");
@@ -1788,7 +1853,7 @@ input[type="submit"] {
     margin-bottom: 3em; } }
 
 @media screen and (min-width: 770px) {
-  .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"] {
+  .team .inner .team-member li .team-member-info .h3, .team .inner .team-member li .team-member-info h3, .team .inner .team-member li .team-member-info .body-section ol li:before, .body-section ol .team .inner .team-member li .team-member-info li:before {
     margin-top: 1em; } }
 
 .about-blurb {
@@ -1891,6 +1956,10 @@ input[type="submit"] {
     .nav-default .nav-button-home:last-child {
       margin-right: 0; } }
 
+@media screen and (min-width: 600px) {
+  .nav-default .nav-button-home .break {
+    display: block; } }
+
 @media screen and (max-width: 770px) {
   .nav-default .nav-button-home {
     height: auto;
@@ -1912,10 +1981,6 @@ input[type="submit"] {
       width: 1em;
       margin: 0 1em 1em;
       float: left; } }
-
-@media screen and (min-width: 770px) {
-  .nav-default .break {
-    display: block; } }
 
 @media screen and (min-width: 770px) {
   .nav-default .nav .inner li:nth-child(2) {
@@ -2001,19 +2066,19 @@ input[type="submit"] {
   .nav .nav-item {
     display: none; } }
 
-.nav-mobile {
+.nav-mobile-button {
   width: 100%;
   text-align: right; }
   @media screen and (min-width: 770px) {
-    .nav-mobile {
+    .nav-mobile-button {
       display: none; } }
-  .nav-mobile p {
+  .nav-mobile-button p {
     display: inline-block;
     padding: 1em;
     cursor: pointer;
     background-image: url(../img/texture/bg-halftone-white-2@2x.png);
     background-size: 20em; }
-    .nav-mobile p .nav-mobile-icon {
+    .nav-mobile-button p .nav-mobile-button-icon {
       float: right;
       display: block;
       height: 1.3em;

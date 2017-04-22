@@ -29,17 +29,18 @@ mixin testimonial-featured(quote, photo, author, title)
 	div.outer.testimonial
 		div.inner
 			div.quote.svg
-				include ../_svg/quote-white-texture.pug
+				include ../_svg/quote.pug
 			div.content
 				h3.h3= quote
 				div.source
 					div.source-photo
 						img(src=photo)
-					h5.h5= author
-					h5.h5= title
+					div.source-info
+						h5.h5= author
+						h5.h5= title
 		div.clearfix
 
-mixin testimonial(quote, photo, author, title, link)
+mixin testimonial(quote, photo, author, title)
 	div.outer.testimonial
 		div.inner(class!=attributes.class)
 			div.quote.svg
@@ -51,10 +52,9 @@ mixin testimonial(quote, photo, author, title, link)
 						img(src=photo)
 					h5.h5.white-trans= author
 					h5.h5.white-trans= title
-				div.testimonial-cta.cta-square
-					a(href= link)
-						h5.h5 View case study
-						span.cta-arrow
+				if block
+					block
+				else
 		div.clearfix
 
 mixin whitepaper(photo, title, summary, link)

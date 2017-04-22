@@ -237,11 +237,35 @@
 				@include media(min-width $desktop) {
 					@include span-columns(8);
 				}
+				@include media(max-width $desktop min-width $tablet) {
+					@include span-columns(6);
+				}
+				@include media(max-width $tablet) {
+					@include span-columns(12);
+				}
+				.source-photo {
+					@include media(max-width $tablet) {
+						@include span-columns(3);
+					}
+				}
+				.source-info {
+					@include media(max-width $tablet) {
+						@include span-columns(9);
+						@include omega;
+					}
+				}
 			}
 			.testimonial-cta {	
 				@include media(min-width $desktop) {
 					@include span-columns(4);
 					@include omega;
+				}
+				@include media(max-width $desktop min-width $tablet) {
+					@include span-columns(6);
+					@include omega;
+				}
+				@include media(max-width $tablet) {
+					@include span-columns(12);
 				}
 			}
 		}

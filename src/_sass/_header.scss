@@ -72,6 +72,11 @@
 			@include span-columns(2);
 			height: auto;
 		}
+		@include media(min-width $landscape){
+			.break {
+				display: block;
+			}
+		}
 		@include media(max-width $tablet) {
 			@include size(11em auto);
 			@include pad(.5em 0);
@@ -90,11 +95,6 @@
 			@include size(1em 2em);
 			margin: 0 1em 1em;
 			float: left;
-		}
-	}
-	@include media(min-width $tablet) {
-		.break {
-			display: block;
 		}
 	}
 }
@@ -193,6 +193,8 @@
 
 // NAV ON MOBILE
 
+.nav-mobile {}
+
 .nav {
 	.nav-item {
 		@include media(max-width $tablet) {
@@ -201,7 +203,7 @@
 	}
 }
 
-.nav-mobile {
+.nav-mobile-button {
 	@include media(min-width $tablet) {
 		display: none;
 	}
@@ -213,7 +215,7 @@
 		cursor: pointer;
 		background-image: url(../img/texture/bg-halftone-white-2@2x.png);
 		background-size: 20em;
-		.nav-mobile-icon {
+		.nav-mobile-button-icon {
 			float: right;
 			display: block;
 			@include size(1.3em);

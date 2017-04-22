@@ -1,5 +1,5 @@
 .hero-home {
-	background-image: url("../img/project/project-roco-ki.jpg");
+	background-image: url("../img/project/project-roco-ki-golf.jpg");
 	background-size: cover;
 }
 
@@ -72,9 +72,15 @@
 		// background-image: url("../img/photo-resort.jpg");
 		// background-size: cover;
 		@include media(max-width $desktop min-width $tablet) {
+			height: 17em;
+		}
+		@include media(max-width $tablet min-width $landscape) {
 			height: 15em;
 		}
-		@include media(max-width $tablet) {
+		@include media(max-width $landscape min-width $mobile) {
+			height: 12em;
+		}
+		@include media(max-width $mobile) {
 			height: 10em;
 		}
 		.stats {
@@ -112,6 +118,13 @@
 	    z-index: -1;
 	    top: -3.5em;
     }
+	}
+	.project-body {
+		.body-section {
+			.h5 {
+				margin-bottom: 1em;
+			}
+		}
 	}
 }
 
@@ -161,7 +174,12 @@
 	}
 	.map-see-all-projects {
 		@extend .margin-top;
+		@extend .margin-big-bottom;
 		text-align: center;
+		.h5 {
+			// font-size: 1.4rem;
+			// @include pad(.6rem 1rem);
+		}
 	}
 }
 
@@ -406,13 +424,12 @@
 					margin-bottom: 3em;
 				}
 				.team-member-info {
-					.h5 {
+					.h3 {
 						@include media(min-width $tablet) {
 							margin-top: 1em;
 						}
 						@extend .margin-bottom;
 					}
-					.h3 {}
 					p {
 						@extend .margin-top;
 					}

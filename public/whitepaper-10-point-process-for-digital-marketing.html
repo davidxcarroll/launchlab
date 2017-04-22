@@ -11,10 +11,10 @@
   </head>
   <body></body>
   <div class="nav-default nav-whitepapers">
-    <div class="nav-mobile">
-      <p class="button">Menu<span class="nav-mobile-icon"><span class="nav-mobile-icon-menu svg show"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+    <div class="nav-mobile-button">
+      <p class="button">Menu<span class="nav-mobile-button-icon"><span class="nav-mobile-button-icon-menu svg show"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 <path d="M4,4 L27,4 L27,8.6 L4,8.6 L4,4 Z M4,13.2 L27,13.2 L27,17.8 L4,17.8 L4,13.2 Z M4,22.4 L27,22.4 L27,27 L4,27 L4,22.4 Z"></path>
-</svg></span><span class="nav-mobile-icon-close svg hide"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+</svg></span><span class="nav-mobile-button-icon-close svg hide"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.7580736,11.5053824 L8.25269119,5.00000001 L5,8.25269121 L11.5053824,14.7580736 L5.00000003,21.263456 L8.25269116,24.5161471 L14.7580735,18.0107647 L21.263456,24.5161472 L24.5161472,21.263456 L18.0107647,14.7580735 L24.5161471,8.25269113 L21.263456,5 L14.7580736,11.5053824 Z"></path>
 </svg></span></span></p>
     </div>
@@ -141,10 +141,10 @@
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script type="text/javascript">
 
-  $(".nav-mobile .button").click(function(){
+  $(".nav-mobile-button .button").click(function(){
     $(".nav .nav-item").toggle();
-    $(".nav-mobile-icon-menu").toggle();
-    $(".nav-mobile-icon-close").toggle();
+    $(".nav-mobile-button-icon-menu").toggle();
+    $(".nav-mobile-button-icon-close").toggle();
     $(".nav-logo").toggle();
     if($('.nav .inner li div').hasClass('nav-button-home')){
 	  	$('.nav .inner li div').removeClass('nav-button-home')
