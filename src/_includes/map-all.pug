@@ -1,0 +1,78 @@
+div.outer.project-list-full
+	div.inner
+		h1.h1 Complete project list
+		div.project-list
+
+			mixin project(resort, location)
+				li
+					h6.h6= resort
+					p.h8= location
+
+			div.project-list-region
+				p.h7.black-trans Western United States
+				ul
+					+project('Brightwater Club', 'Vail Valley, Colorado')
+					+project('Chenoa', 'Aspen, Colorado')
+					+project('Copper Mountain Resort', 'Copper Mountain, Colorado')
+					+project('Cordillera', 'Vail, Colorado')
+					+project('Crested Butte Resort', 'Crested Butte, Colorado')
+					+project('Grand Elk', 'Winter Park, Colorado')
+					+project('Grizzly Ranch', 'Lake Tahoe, California')
+					+project('Hidden River Lodge', 'Keystone, Colorado')
+					+project('Juniper Springs Lodge', 'Mammoth, California')
+					+project('La Quinta Resort', 'La Quinta, California')
+					+project('Mountain Thunder Lodge', 'Breckenridge, Colorado')
+					+project('The Snowmass Club', 'Aspen, Colorado')
+					+project('Sonoma Golf Club', 'Sonoma Valley, California')
+					+project('The Timbers Club at Snowmass', 'Aspen, Colorado')
+					+project('Promontory', 'Park City, Utah')
+					+project('Red Ledges', 'Heber City, Utah')
+					+project('Westgate Park City Resort & Spa', 'Park City, Utah')
+					+project('Rock Creek Resort', 'Red Lodge, Montana')
+					+project('The Club at Spanish Peaks', 'Big Sky, Montana')
+
+			div.project-list-region
+				p.h7.black-trans Southern United States
+				ul
+					+project('Mountain Air', 'Burnsville, North Carolina')
+					+project('Preservation Row at River Towne', 'Charleston, South Carolina')
+					+project('Haig Point', 'Hilton Head, South Carolina')
+					+project('Westgate Myrtle Beach Resort & Spa', 'Myrtle Beach, South Carolina')
+					+project('Bella Collina', 'Montverde, Florida')
+					+project('Hammock Beach', 'St. Augustine, Florida')
+					+project('Reunion Resort & Club', 'Orlando, Florida')
+					+project('Terra Verde', 'Orlando, Florida')
+					+project('Tesoro', 'Stuart, Florida')
+					+project('Concordia', 'Cape Coral, Florida')
+					+project('Grenelefe', 'Orlando, Florida')
+					+project('Harborside Residences', 'Tampa, Florida')
+
+			div.project-list-region
+				p.h7.black-trans Eastern United States &amp; Canada
+				ul
+					+project('Bayside' ,'Selbyville, Deleware')
+					+project('Bigwin Island', 'Lake of Bays, Ontario')
+					+project('Great Bear Lake Resort', 'Northwest Territories')
+					+project('Quechee Lakes', 'Quechee, Vermont')
+					+project('Spruce Peak', 'Stowe Mountain Resort, Vermont')
+					+project('Wisp Resort', 'Deep Creek Lake, Maryland')
+
+			div.project-list-region
+				p.h7.black-trans Latin America &amp; The Caribbean
+				ul
+					+project('The Four Seasons', 'Punta Mita, Mexico')
+					+project('Grand Roatan', 'Roatan, Honduras')
+					+project('Groupo Landmark', 'Panama City, Panama')
+					+project('La Capilla', 'Los Cabos, Mexico')
+					+project('Promesa', 'Panama City, Panama')
+					+project('La Paradis', 'Praslin Bay, St. Lucia')
+					+project('Mahogany Bay Village', 'Ambergris Caye, Belize')
+					+project('Montecanto', 'Volcan, Panama')
+					+project('Monte del Barco', 'Guanacaste, Costa Rica')
+					+project('Roco Ki', 'Dominican Republic')
+					+project('St. Regis Residences', 'Playa Hermosa, Costa Rica')
+					+project('Royal Haciendas', 'Rivera Maya, Mexico')
+					+project('Royal Resorts', 'Cancún, Mexico')
+					+project('Groupo Maioris', 'Puerto Cancún, Mexico')
+
+			div.clearfix

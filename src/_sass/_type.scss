@@ -73,7 +73,7 @@ strong {
   color: $white;
 }
 .white-trans {
-  color: rgba($white, .4);
+  color: rgba($white, .7);
 }
 
 @include media(min-width $landscape) {

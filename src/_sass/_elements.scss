@@ -65,6 +65,7 @@
 }
 
 .project-featured {
+	@extend .margin-big-bottom;
 	.project-photo-block {
 		position: relative;
 		overflow: hidden;
@@ -115,9 +116,11 @@
 }
 
 .project-list-map {
+	@extend .padding-big-top;
+	@extend .padding-big-bottom;
 	@extend .margin-big-bottom;
-	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
-	background-size: 20em;
+	background-image: url("../img/texture/bg-map.jpg");
+	background-size: cover;
 	.inner {
 		h1 {
 			text-align: center;
@@ -145,7 +148,36 @@
 			display: none;
 		}
 		@extend .margin-big-top;
-		@extend .margin-big-bottom;
+		.project-list-region {
+			.h7 {
+				@extend .margin-bottom;
+			}
+			ul {
+				li {
+					@extend .margin-bottom;
+				}
+			}
+		}
+	}
+	.map-see-all-projects {
+		@extend .margin-top;
+		text-align: center;
+	}
+}
+
+.project-list-full {
+	@extend .padding-big-top;
+	@extend .padding-big-bottom;
+	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
+	background-size: 20em;
+	.inner {
+		h1 {
+			text-align: center;
+			@extend .padding-top;
+		}
+	}
+	.project-list {
+		@extend .margin-big-top;
 		.project-list-region {
 			.h7 {
 				@extend .margin-bottom;
@@ -163,10 +195,13 @@
 	// @extend .margin-big-top;
 	@extend .margin-big-bottom;
 	.inner {
+		@extend .padding-big-top;
+		@extend .padding-big-bottom;
 		.content {
 			.source {
+				@extend .margin-big-top;
 				.source-photo {
-					@include size(5em);
+					@include size(6.25em);
 					float: left;
 					margin-right: 1em;
 					background-size: cover;
@@ -184,8 +219,11 @@
 					}
 				}
 				.h5 {
-					@extend .margin-top;
+					@extend .margin-bottom;
 				}
+			}
+			.testimonial-cta {
+				@extend .margin-big-top;
 			}
 		}
 		.quote {
@@ -198,6 +236,24 @@
 			}
 		}
 	}
+}
+
+@mixin tesimonial-bg($project){
+	background-image: url("../img/texture/bg-halftone-black-2@2x.png"),
+										url("../img/project/project-"+$project+".jpg");
+	background-size: 25em, cover;
+}
+.testimonial-mark_waltrip {
+	@include tesimonial-bg(westgate);
+}
+.testimonial-larry_hall {
+	@include tesimonial-bg(concordia);
+}
+.testimonial-kemil_rizk {
+	@include tesimonial-bg(haciendas);
+}
+.testimonial-richard_knorr {
+	@include tesimonial-bg(roco-ki);
 }
 
 .contact {
@@ -282,6 +338,9 @@
 	@extend .margin-big-top;
 	@extend .margin-big-bottom;
 	text-align: center;
+	.h4 {
+		@extend .margin-top;
+	}
 }
 
 .project {
@@ -366,6 +425,7 @@
 .about-blurb {
 	@extend .padding-big-top;
 	@extend .padding-big-bottom;
+	text-align: center;
 	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
 	background-size: 22em;
 }

@@ -539,10 +539,10 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.margin-top, .project-featured .project-info, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .featured-article .inner .content .article-summary p, .project .inner .project-content, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
+.margin-top, .project-featured .project-info, .project-list-map .map-see-all-projects, .featured-article .inner .content .article-summary p, .page-title .h4, .page-title h4, .project .inner .project-content, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
   margin-top: 1em; }
 
-.margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
+.margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .project-list-full .project-list .project-list-region .h7, .project-list-full .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-full .project-list .project-list-region .footer-column, .project-list-full .project-list .project-list-region ul li, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h5, .team .inner .team-member li .team-member-info h5, .team .inner .team-member li .team-member-info input[type="submit"], .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
   margin-bottom: 1em; }
 
 .margin-left {
@@ -551,10 +551,10 @@ picture {
 .margin-right {
   margin-right: 1em; }
 
-.margin-big-top, .project-list-map .project-list, .primary-message .inner, .project-list-map .map, .page-title, .project .inner .project-sidebar {
+.margin-big-top, .primary-message .inner, .project-list-map .map, .project-list-map .project-list, .project-list-full .project-list, .testimonial .inner .content .source, .testimonial .inner .content .testimonial-cta, .page-title, .project .inner .project-sidebar {
   margin-top: 3.75em; }
 
-.margin-big-bottom, .project-list-map .project-list, .primary-message-buckets .inner, .project-featured .project-info, .project-list-map, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
+.margin-big-bottom, .project-list-full, .primary-message-buckets .inner, .project-featured, .project-featured .project-info, .project-list-map, .project-list-map .map, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
   margin-bottom: 3.75em; }
 
 .margin-big-left {
@@ -563,7 +563,7 @@ picture {
 .margin-big-right {
   margin-right: 3.75em; }
 
-.padding-top, .project-list-map .inner h1 {
+.padding-top, .project-list-full .inner h1, .project-list-map .inner h1 {
   padding-top: 1em; }
 
 .padding-bottom {
@@ -575,10 +575,10 @@ picture {
 .padding-right {
   padding-right: 1em; }
 
-.padding-big-top, .contact .inner .content, .about-blurb, .footer .inner {
+.padding-big-top, .project-list-full, .project-list-map, .testimonial .inner, .contact .inner .content, .about-blurb, .footer .inner {
   padding-top: 3.75em; }
 
-.padding-big-bottom, .contact .inner, .about-blurb, .footer .inner {
+.padding-big-bottom, .project-list-full, .project-list-map, .testimonial .inner, .contact .inner, .about-blurb, .footer .inner {
   padding-bottom: 3.75em; }
 
 .padding-big-left {
@@ -697,7 +697,7 @@ strong {
   color: #FFFFFF; }
 
 .white-trans {
-  color: rgba(255, 255, 255, 0.4); }
+  color: rgba(255, 255, 255, 0.7); }
 
 @media screen and (min-width: 600px) {
   .h2, h2 {
@@ -971,8 +971,9 @@ input[type="submit"] {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
-    margin-left: 12.79471%; }
+    width: 100%;
+    height: 50vh;
+    min-height: 20em; }
     .project-featured .project-photo-block:last-child {
       margin-right: 0; } }
 
@@ -1010,8 +1011,7 @@ input[type="submit"] {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
-    margin-left: 12.79471%; }
+    width: 100%; }
     .project-featured .project-info:last-child {
       margin-right: 0; } }
 
@@ -1082,27 +1082,42 @@ input[type="submit"] {
     .project-list-map .inner h1:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 770px) {
+.project-list-map .inner .map-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .project-list-map .inner .map-wrap:last-child {
+    margin-right: 0; }
+
+.project-list-map .inner .map-see-all-projects {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .project-list-map .inner .map-see-all-projects:last-child {
+    margin-right: 0; }
+
+@media screen and (min-width: 1140px) {
   .project-list-map .map {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%;
+    width: 48.82117%;
     margin-left: 8.5298%; }
     .project-list-map .map:last-child {
       margin-right: 0; } }
 
-@media screen and (max-width: 770px) and (min-width: 600px) {
+@media screen and (max-width: 1140px) and (min-width: 770px) {
   .project-list-map .map {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
+    width: 48.82117%; }
     .project-list-map .map:last-child {
       margin-right: 0; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) and (min-width: 600px) {
   .project-list-map .map {
     float: left;
     display: block;
@@ -1112,12 +1127,21 @@ input[type="submit"] {
     .project-list-map .map:last-child {
       margin-right: 0; } }
 
+@media screen and (max-width: 600px) {
+  .project-list-map .map {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .project-list-map .map:last-child {
+      margin-right: 0; } }
+
 @media screen and (min-width: 1140px) {
   .project-list-map .project-list {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 40.29137%; }
+    width: 31.76157%; }
     .project-list-map .project-list:last-child {
       margin-right: 0; } }
 
@@ -1143,6 +1167,55 @@ input[type="submit"] {
   .project-list-map .project-list .project-list-region:nth-child(2n+1) {
     clear: left; }
 
+.project-list-full {
+  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
+  background-size: 20em; }
+  .project-list-full .inner h1 {
+    text-align: center; }
+  @media screen and (max-width: 1140px) {
+    .project-list-full .project-list {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .project-list-full .project-list:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 770px) {
+    .project-list-full .project-list .project-list-region {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .project-list-full .project-list .project-list-region:last-child {
+        margin-right: 0; }
+      .project-list-full .project-list .project-list-region:nth-child(4n) {
+        margin-right: 0; }
+      .project-list-full .project-list .project-list-region:nth-child(4n+1) {
+        clear: left; } }
+  @media screen and (max-width: 770px) and (min-width: 600px) {
+    .project-list-full .project-list .project-list-region {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-bottom: 2em; }
+      .project-list-full .project-list .project-list-region:last-child {
+        margin-right: 0; }
+      .project-list-full .project-list .project-list-region:nth-child(2n) {
+        margin-right: 0; }
+      .project-list-full .project-list .project-list-region:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (max-width: 600px) {
+    .project-list-full .project-list .project-list-region {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 2em; }
+      .project-list-full .project-list .project-list-region:last-child {
+        margin-right: 0; } }
+
 @media screen and (min-width: 600px) {
   .testimonial .inner .content {
     float: left;
@@ -1162,6 +1235,25 @@ input[type="submit"] {
     .testimonial .inner .content:last-child {
       margin-right: 0; } }
 
+@media screen and (min-width: 1140px) {
+  .testimonial .inner .content .source {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .testimonial .inner .content .source:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 1140px) {
+  .testimonial .inner .content .testimonial-cta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-right: 0; }
+    .testimonial .inner .content .testimonial-cta:last-child {
+      margin-right: 0; } }
+
 .testimonial .inner .quote {
   float: left;
   display: block;
@@ -1170,16 +1262,6 @@ input[type="submit"] {
   margin-left: 8.5298%; }
   .testimonial .inner .quote:last-child {
     margin-right: 0; }
-
-@media screen and (min-width: 1140px) {
-  .contact .inner {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    .contact .inner:last-child {
-      margin-right: 0; } }
 
 @media screen and (max-width: 1140px) and (min-width: 420px) {
   .contact .inner {
@@ -1241,16 +1323,6 @@ input[type="submit"] {
       width: 48.82117%; }
       .contact .inner .content .contact-submit input[type="submit"]:last-child {
         margin-right: 0; } }
-
-@media screen and (min-width: 1140px) {
-  .featured-article .inner {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    .featured-article .inner:last-child {
-      margin-right: 0; } }
 
 @media screen and (max-width: 1140px) and (min-width: 770px) {
   .featured-article .inner {
@@ -1342,17 +1414,36 @@ input[type="submit"] {
     .article .inner .content .article-body:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 600px) {
-  .team .inner .team-member {
+@media screen and (min-width: 770px) {
+  .page-title .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .page-title .content:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .page-title .content {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 8.5298%; }
+    .page-title .content:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .team .inner .team-member {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
     .team .inner .team-member:last-child {
       margin-right: 0; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   .team .inner .team-member {
     float: left;
     display: block;
@@ -1413,16 +1504,6 @@ input[type="submit"] {
     margin-left: 8.5298%;
     margin-right: 0; }
     .team .inner .team-member li .team-member-info:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 770px) {
-  .about-blurb .inner {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    .about-blurb .inner:last-child {
       margin-right: 0; } }
 
 @media screen and (max-width: 770px) {
@@ -1567,8 +1648,8 @@ input[type="submit"] {
     top: -3.5em; } }
 
 .project-list-map {
-  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
-  background-size: 20em; }
+  background-image: url("../img/texture/bg-map.jpg");
+  background-size: cover; }
   .project-list-map .inner h1 {
     text-align: center; }
   .project-list-map .map {
@@ -1588,10 +1669,18 @@ input[type="submit"] {
   @media screen and (max-width: 770px) {
     .project-list-map .project-list {
       display: none; } }
+  .project-list-map .map-see-all-projects {
+    text-align: center; }
+
+.project-list-full {
+  background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
+  background-size: 20em; }
+  .project-list-full .inner h1 {
+    text-align: center; }
 
 .testimonial .inner .content .source .source-photo {
-  height: 5em;
-  width: 5em;
+  height: 6.25em;
+  width: 6.25em;
   float: left;
   margin-right: 1em;
   background-size: cover; }
@@ -1614,6 +1703,22 @@ input[type="submit"] {
     .testimonial .inner .quote {
       height: 3em;
       width: 3em; } }
+
+.testimonial-mark_waltrip {
+  background-image: url("../img/texture/bg-halftone-black-2@2x.png"), url("../img/project/project-westgate.jpg");
+  background-size: 25em, cover; }
+
+.testimonial-larry_hall {
+  background-image: url("../img/texture/bg-halftone-black-2@2x.png"), url("../img/project/project-concordia.jpg");
+  background-size: 25em, cover; }
+
+.testimonial-kemil_rizk {
+  background-image: url("../img/texture/bg-halftone-black-2@2x.png"), url("../img/project/project-haciendas.jpg");
+  background-size: 25em, cover; }
+
+.testimonial-richard_knorr {
+  background-image: url("../img/texture/bg-halftone-black-2@2x.png"), url("../img/project/project-roco-ki.jpg");
+  background-size: 25em, cover; }
 
 .contact .inner {
   background-color: #000; }
@@ -1687,6 +1792,7 @@ input[type="submit"] {
     margin-top: 1em; } }
 
 .about-blurb {
+  text-align: center;
   background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
   background-size: 22em; }
 
@@ -1919,15 +2025,6 @@ input[type="submit"] {
   background-size: 20em; }
   .footer .inner {
     text-align: center; }
-    @media screen and (min-width: 770px) {
-      .footer .inner {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-left: 17.05961%; }
-        .footer .inner:last-child {
-          margin-right: 0; } }
     @media screen and (max-width: 770px) {
       .footer .inner {
         float: left;

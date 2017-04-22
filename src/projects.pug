@@ -6,12 +6,14 @@ block content
 		include _includes/header.pug
 
 	div.outer.page-title
-		h2.h2 Featured projects
+		div.inner
+			div.content
+				h2.h2 Featured projects
 	
 	+project(
 	'img/project/project-westgate.jpg',
-	'$100M',
-	'Original Launch Sales',
+	'State record',
+	'Utah pre-sales',
 	'$65M',
 	'Pre-sale launch',
 	'Westgate Resort, Park City, Utah',
@@ -20,10 +22,10 @@ block content
 	
 	+project(
 	'img/project/project-concordia.jpg',
-	'$24M',
-	'Post market crash',
-	'3,000',
-	'Qualified leads',
+	'249 sales',
+	'in just 11 months',
+	'18.6%',
+	'Sales closing percentage',
 	'Concordia, Cape Coral, Florida',
 	'A Post Meltdown Success Story',
 	'project-concordia.html')
@@ -47,3 +49,5 @@ block content
 	'Roco Ki, Dominican Republic',
 	'Single Day Caribbean Sales Record',
 	'project-roco-ki.html')
+
+	include _includes/map-all.pug

@@ -93,8 +93,9 @@
 .project-featured {
 	.project-photo-block {
 		@include media(min-width $desktop) {
-			@include span-columns(9);
-			@include shift(1.5);
+			@include span-columns(12);
+			height: 50vh;
+			min-height: 20em;
 		}
 		@include media(max-width $desktop min-width $tablet) {
 			@include span-columns(8);
@@ -111,8 +112,7 @@
 	}
 	.project-info {
 		@include media(min-width $desktop) {
-			@include span-columns(9);
-			@include shift(1.5);
+			@include span-columns(12);
 		}
 		@include media(max-width $desktop min-width $tablet) {
 			@include span-columns(8);
@@ -150,34 +150,75 @@
 				@include shift(2);
 			}
 		}
+		.map-wrap {
+			@include span-columns(12);
+		}
+		.map-see-all-projects {
+			@include span-columns(12);
+		}
 	}
 	.map {
-		@include media(min-width $tablet) {
-			@include span-columns(5);
+		@include media(min-width $desktop) {
+			@include span-columns(6);
 			@include shift(1);
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(6);
 		}
 		@include media(max-width $tablet min-width $landscape) {
-			@include span-columns(8);
-			@include shift(2);
-		}
-		@include media(max-width $landscape) {
 			@include span-columns(10);
 			@include shift(1);
+		}
+		@include media(max-width $landscape) {
+			@include span-columns(12);
 		}
 	}
 	.project-list {
 		@include media(min-width $desktop) {
-			@include span-columns(5);
+			@include span-columns(4);
 		}
 		@include media(max-width $desktop min-width $tablet) {
 			@include span-columns(6);
 			@include omega;
 		}
-		@extend .margin-big-top;
-		@extend .margin-big-bottom;
 		.project-list-region {
 			@include span-columns(6);
 			@include omega(2n);
+		}
+	}
+}
+
+.project-list-full {
+	@extend .padding-big-top;
+	@extend .padding-big-bottom;
+	@extend .margin-big-bottom;
+	background-image: url("../img/texture/bg-halftone-black-1-trans@2x.png");
+	background-size: 20em;
+	.inner {
+		h1 {
+			text-align: center;
+			@extend .padding-top;
+		}
+	}
+	.project-list {
+		@include media(max-width $desktop) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+		.project-list-region {
+			@include media(min-width $tablet) {
+				@include span-columns(3);
+				@include omega(4n);
+			}
+			@include media(max-width $tablet min-width $landscape) {
+				@include span-columns(6);
+				@include omega(2n);
+				margin-bottom: 2em;
+			}
+			@include media(max-width $landscape) {
+				@include span-columns(12);
+				margin-bottom: 2em;
+			}
 		}
 	}
 }
@@ -192,6 +233,17 @@
 				@include span-columns(10);
 				@include shift(1);
 			}
+			.source {
+				@include media(min-width $desktop) {
+					@include span-columns(8);
+				}
+			}
+			.testimonial-cta {	
+				@include media(min-width $desktop) {
+					@include span-columns(4);
+					@include omega;
+				}
+			}
 		}
 		.quote {
 			@include span-columns(1);
@@ -202,10 +254,10 @@
 
 .contact {
 	.inner {
-		@include media(min-width $desktop) {
-			@include span-columns(8);
-			@include shift(2);
-		}
+		// @include media(min-width $desktop) {
+		// 	@include span-columns(8);
+		// 	@include shift(2);
+		// }
 		@include media(max-width $desktop min-width $mobile) {
 			@include span-columns(10);
 			@include shift(1);
@@ -241,10 +293,10 @@
 
 .featured-article {
 	.inner {
-		@include media(min-width $desktop) {
-			@include span-columns(8);
-			@include shift(2);
-		}
+		// @include media(min-width $desktop) {
+		// 	@include span-columns(8);
+		// 	@include shift(2);
+		// }
 		@include media(max-width $desktop min-width $tablet) {
 			@include span-columns(10);
 			@include shift(1);
@@ -301,14 +353,27 @@
 	}
 }
 
+
+.page-title {
+	.content {
+		@include media(min-width $tablet) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+}
+
 .team {
 	.inner {
 		.team-member {
-			@include media(min-width $landscape) {
-				@include span-columns(10);
-				@include shift(1);
+			@include media(min-width $tablet) {
+				@include span-columns(12);
 			}
-			@include media(max-width $landscape) {
+			@include media(max-width $tablet) {
 				@include span-columns(10);
 				@include shift(1);
 			}
@@ -344,10 +409,10 @@
 
 .about-blurb {
 	.inner {
-		@include media(min-width $tablet) {
-			@include span-columns(8);
-			@include shift(2);
-		}
+		// @include media(min-width $tablet) {
+		// 	@include span-columns(8);
+		// 	@include shift(2);
+		// }
 		@include media(max-width $tablet) {
 			@include span-columns(10);
 			@include shift(1);

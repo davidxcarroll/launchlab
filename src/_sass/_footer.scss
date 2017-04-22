@@ -8,10 +8,10 @@
 		@extend .padding-big-top;
 		@extend .padding-big-bottom;
 		text-align: center;
-		@include media(min-width $tablet) {
-			@include span-columns(8);
-			@include shift(2);
-		}
+		// @include media(min-width $tablet) {
+		// 	@include span-columns(8);
+		// 	@include shift(2);
+		// }
 		@include media(max-width $tablet) {
 			@include span-columns(10);
 			@include shift(1);
