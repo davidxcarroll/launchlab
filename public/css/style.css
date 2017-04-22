@@ -539,7 +539,7 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.margin-top, .project-featured .project-info, .project-list-map .map-see-all-projects, .featured-article .inner .content .article-summary p, .page-title .h4, .page-title h4, .project .inner .project-content, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
+.margin-top, .project-featured .project-info, .project-list-map .map-see-all-projects, .featured-article .inner .content .article-summary p, .page-title .h4, .page-title h4, .page-title-long .h4, .page-title-long h4, .project .inner .project-content, .project .inner .project-content .project-title .h5, .project .inner .project-content .project-title h5, .project .inner .project-content .project-title input[type="submit"], .team .inner .team-member li .team-member-info p, .awards .inner ul li.award .award-info ul li {
   margin-top: 1em; }
 
 .margin-bottom, .primary-message .inner, .project-featured .project-info .project-info-title .h5, .project-featured .project-info .project-info-title h5, .project-featured .project-info .project-info-title input[type="submit"], .project-list-map .project-list .project-list-region .h7, .project-list-map .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-map .project-list .project-list-region .footer-column, .project-list-map .project-list .project-list-region ul li, .project-list-full .project-list .project-list-region .h7, .project-list-full .project-list .project-list-region .footer .inner .footer-column, .footer .inner .project-list-full .project-list .project-list-region .footer-column, .project-list-full .project-list .project-list-region ul li, .testimonial .inner .content .source .h5, .testimonial .inner .content .source h5, .testimonial .inner .content .source input[type="submit"], .contact .inner .content .h1, .contact .inner .content h1, .contact .inner .content .contact-fields input, .featured-article .inner .content .article-summary .h5, .featured-article .inner .content .article-summary h5, .featured-article .inner .content .article-summary input[type="submit"], .team .inner .team-member li .team-member-info .h3, .team .inner .team-member li .team-member-info h3, .team .inner .team-member li .team-member-info .body-section ol li:before, .body-section ol .team .inner .team-member li .team-member-info li:before, .awards .inner ul li.award .award-info .h5, .awards .inner ul li.award .award-info h5, .awards .inner ul li.award .award-info input[type="submit"], .footer .inner .footer-column li, .footer .inner .footer-column p {
@@ -551,10 +551,10 @@ picture {
 .margin-right {
   margin-right: 1em; }
 
-.margin-big-top, .primary-message .inner, .project-list-map .map, .project-list-map .project-list, .project-list-full .project-list, .testimonial .inner .content .source, .testimonial .inner .content .testimonial-cta, .page-title, .project .inner .project-sidebar {
+.margin-big-top, .primary-message .inner, .project-list-map .map, .project-list-map .project-list, .project-list-full .project-list, .testimonial .inner .content .source, .testimonial .inner .content .testimonial-cta, .page-title, .page-title-long, .project .inner .project-sidebar {
   margin-top: 3.75em; }
 
-.margin-big-bottom, .project-list-full, .primary-message-buckets .inner, .project-featured, .project-featured .project-info, .project-list-map, .project-list-map .map, .project-list-map .map-see-all-projects, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
+.margin-big-bottom, .project-list-full, .primary-message-buckets .inner, .project-featured, .project-featured .project-info, .project-list-map, .project-list-map .map, .project-list-map .map-see-all-projects, .testimonial, .contact .inner, .featured-article, .article .inner, .page-title, .page-title-long, .project .inner .project-content, .project .inner .project-content .project-title, .project .inner .project-content .project-body .timeline-block, .awards {
   margin-bottom: 3.75em; }
 
 .margin-big-left {
@@ -1400,6 +1400,26 @@ input[type="submit"] {
     .featured-article .inner:last-child {
       margin-right: 0; } }
 
+@media screen and (max-width: 1140px) and (min-width: 770px) {
+  .featured-article .inner .content .page-title .inner .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .featured-article .inner .content .page-title .inner .content:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .featured-article .inner .content .page-title .inner .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .featured-article .inner .content .page-title .inner .content:last-child {
+      margin-right: 0; } }
+
 @media screen and (min-width: 770px) {
   .featured-article .inner .content .article-photo {
     float: left;
@@ -1488,6 +1508,26 @@ input[type="submit"] {
     width: 82.94039%;
     margin-left: 8.5298%; }
     .page-title .content:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 770px) {
+  .page-title-long .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .page-title-long .content:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 770px) {
+  .page-title-long .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .page-title-long .content:last-child {
       margin-right: 0; } }
 
 @media screen and (min-width: 770px) {
@@ -1814,6 +1854,12 @@ input[type="submit"] {
   margin-top: 1em; }
 
 .page-title {
+  text-align: center; }
+
+.article .page-title {
+  margin-bottom: 0; }
+
+.page-title-long {
   text-align: center; }
 
 .project .inner .project-photo-block {

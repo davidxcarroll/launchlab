@@ -330,6 +330,20 @@
 			@include shift(1);
 		}
 		.content {
+			.page-title {
+				.inner {
+					.content {
+						@include media(max-width $desktop min-width $tablet) {
+							@include span-columns(8);
+							@include shift(2);
+						}
+						@include media(max-width $tablet) {
+							@include span-columns(10);
+							@include shift(1);
+						}
+					}
+				}
+			}
 			.article-photo {
 				@include media(min-width $tablet) {
 					@include span-columns(4.75);
@@ -377,12 +391,24 @@
 	}
 }
 
-
 .page-title {
 	.content {
 		@include media(min-width $tablet) {
 			@include span-columns(8);
 			@include shift(2);
+		}
+		@include media(max-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+	}
+}
+
+.page-title-long {
+	.content {
+		@include media(min-width $tablet) {
+			@include span-columns(10);
+			@include shift(1);
 		}
 		@include media(max-width $tablet) {
 			@include span-columns(10);

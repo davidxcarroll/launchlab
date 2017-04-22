@@ -360,6 +360,19 @@
 		@extend .margin-top;
 	}
 }
+.article {
+	.page-title {
+		margin-bottom: 0;
+	}
+}
+.page-title-long {
+	@extend .margin-big-top;
+	@extend .margin-big-bottom;
+	text-align: center;
+	.h4 {
+		@extend .margin-top;
+	}
+}
 
 .project {
 	.inner {
