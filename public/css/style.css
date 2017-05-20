@@ -1800,7 +1800,6 @@ input[type="submit"] {
   .project-list-map .inner h1 {
     text-align: center; }
   .project-list-map .map {
-    display: none;
     text-align: center; }
     @media screen and (min-width: 1140px) {
       .project-list-map .map .svg {
@@ -1815,6 +1814,7 @@ input[type="submit"] {
         height: 16em;
         width: 100%; } }
   .project-list-map .project-summary {
+    display: none;
     position: relative;
     padding: 2em;
     background: #FFFFFF;
@@ -1862,7 +1862,7 @@ input[type="submit"] {
       display: table; }
     .project-list-map .project-list .project-list-region ul li .project-pin {
       position: absolute;
-      left: -1em;
+      left: -2.2em;
       opacity: 0;
       transition: all 0.2s ease-in-out; }
     .project-list-map .project-list .project-list-region ul li .project-text {
@@ -1871,10 +1871,10 @@ input[type="submit"] {
     .project-list-map .project-list .project-list-region ul li:hover {
       cursor: pointer; }
       .project-list-map .project-list .project-list-region ul li:hover .project-pin {
-        left: -.5em;
+        left: -1.6em;
         opacity: 1; }
       .project-list-map .project-list .project-list-region ul li:hover .project-text {
-        margin-left: 1.8em; }
+        margin-left: 0.5em; }
   .project-list-map .map-see-all-projects {
     text-align: center; }
 
