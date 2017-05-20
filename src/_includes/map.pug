@@ -2,6 +2,21 @@ div.outer.project-list-map
 	div.inner
 		h1.h1.white We've been everywhere, man
 		div.map-wrap
+			div.project-summary
+				div.project-summary-title
+					div.project-pin
+						include ../_svg/pin.pug
+					div.project-text
+						h4.h4 Westgate Park City Resort
+						p.h8.black-trans Park City, Utah
+						div.project-summary-close
+							include ../_svg/close.pug
+				.project-summary-photo
+				.project-summary-content
+					p Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.
+					div.cta
+						a(href="projects.html")
+							h5.h5 See full case study
 			div.map
 				div.svg
 					include ../_svg/map.pug
@@ -9,8 +24,11 @@ div.outer.project-list-map
 
 				mixin project(resort, location)
 					li
-						h6.h6.white= resort
-						p.h8.white-trans= location
+						div.project-pin
+							include ../_svg/pin.pug
+						div.project-text
+							h6.h6.white= resort
+							p.h8.white-trans= location
 
 				div.project-list-region
 					p.h7.white-trans United States of America

@@ -141,6 +141,7 @@
 		}
 	}
 	.map {
+		display: none;
 		text-align: center;
 		@extend .margin-big-top;
 		@extend .margin-big-bottom;
@@ -156,6 +157,40 @@
 			}
 		}
 	}
+	.project-summary {
+		// display: none;
+		position: relative;
+		@extend .margin-big-top;
+		@extend .margin-big-bottom;
+		@include pad(2em);
+		background: $white;
+		box-shadow: -10px 10px 0 0 $black;
+		.project-summary-close {
+			@include size(2em);
+			position: absolute;
+			top: 2em;
+			right: 2em;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.project-summary-title {
+			@include outer-container;
+			@extend .margin-bottom;
+		}
+		.project-summary-photo {
+			@include size(auto 12em);
+			background-image: url("../img/project/project-westgate.jpg");
+			background-size: cover;
+		}
+		.project-summary-content {
+			@include outer-container;
+			@extend .margin-top;
+			.cta {
+				@extend .margin-top;
+			}
+		}
+	}
 	.project-list {
 		@include media(max-width $tablet) {
 			display: none;
@@ -167,7 +202,29 @@
 			}
 			ul {
 				li {
+					@include outer-container;
 					@extend .margin-bottom;
+					position: relative;
+					.project-pin {
+						position: absolute;
+						left: -1em;
+						opacity: 0;
+						transition: all 0.2s ease-in-out;
+					}
+					.project-text {
+						@include margin(null null null 0);
+						transition: all 0.2s ease-in-out;
+					}
+					&:hover {
+						cursor: pointer;
+						.project-pin {
+							left: -.5em;
+							opacity: 1;
+						}
+						.project-text {
+							@include margin(null null null 1.8em);
+						}
+					}
 				}
 			}
 		}

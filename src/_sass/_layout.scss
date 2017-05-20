@@ -157,10 +157,24 @@
 			@include span-columns(12);
 		}
 	}
+	.project-summary {
+		@include media(min-width $desktop) {
+			@include span-columns(7);
+			height: 28em;
+		}
+		@include media(max-width $desktop min-width $tablet) {
+			@include span-columns(5);
+			@include shift(1);
+		}
+		@include media(max-width $tablet) {
+			display: none;
+		}
+	}
 	.map {
 		@include media(min-width $desktop) {
 			@include span-columns(6);
 			@include shift(1);
+			height: 28em;
 		}
 		@include media(max-width $desktop min-width $tablet) {
 			@include span-columns(6);
@@ -186,6 +200,15 @@
 			@include omega(2n);
 		}
 	}
+}
+
+
+.project-pin {
+	@include span-columns(1);
+}
+.project-text {
+	@include span-columns(11);
+	@include omega;
 }
 
 .project-list-full {
